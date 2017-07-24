@@ -16,7 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do view setup here.
+    
+    
 }
+
+#pragma mark - Actions
+
+
+
+#pragma mark - GenerationViewInput
+
+- (void)setupInitialState {
+    
+}
+
 
 @end

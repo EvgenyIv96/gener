@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GenerationPresenter : NSObject
+#import "GenerationViewOutput.h"
+
+@protocol GenerationViewInput;
+
+@interface GenerationPresenter : NSObject <GenerationViewOutput>
+
+@property (weak, nonatomic) id<GenerationViewInput> view;
 
 @end

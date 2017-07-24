@@ -10,4 +10,6 @@
 
 @protocol GenerationViewOutput <NSObject>
 
+- (void)didTriggerViewReadyEvent;
+
 @end

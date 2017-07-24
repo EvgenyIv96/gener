@@ -8,6 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface GenerationViewController : NSViewController
+#import "GenerationViewInput.h"
+
+@protocol GenerationViewOutput;
+
+@interface GenerationViewController : NSViewController <GenerationViewInput>
+
+@property (strong, nonatomic) id<GenerationViewOutput> output;
 
 @end

@@ -10,4 +10,6 @@
 
 @protocol GenerationViewInput <NSObject>
 
+- (void)setupInitialState;
+
 @end

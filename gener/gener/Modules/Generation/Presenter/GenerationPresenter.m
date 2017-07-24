@@ -10,4 +10,10 @@
 
 @implementation GenerationPresenter
 
+#pragma mark - GenerationViewOutput
+
+- (void)didTriggerViewReadyEvent {
+    
+}
+
 @end
