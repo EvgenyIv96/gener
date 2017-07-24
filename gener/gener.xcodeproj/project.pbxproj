@@ -12,6 +12,11 @@
 		57FD61A31F268BBE00554FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FD61A21F268BBE00554FD5 /* Assets.xcassets */; };
 		57FD61A61F268BBE00554FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FD61A41F268BBE00554FD5 /* Main.storyboard */; };
 		57FD61B11F268BBE00554FD5 /* generTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61B01F268BBE00554FD5 /* generTests.m */; };
+		57FD61C31F268DF200554FD5 /* GenerationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61C21F268DF200554FD5 /* GenerationViewController.m */; };
+		57FD61CA1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */; };
+		57FD61CB1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */; };
+		57FD61D01F268F5100554FD5 /* GenerationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */; };
+		57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 		57FD61AC1F268BBE00554FD5 /* generTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = generTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FD61B01F268BBE00554FD5 /* generTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = generTests.m; sourceTree = "<group>"; };
 		57FD61B21F268BBE00554FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FD61C11F268DF200554FD5 /* GenerationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationViewController.h; sourceTree = "<group>"; };
+		57FD61C21F268DF200554FD5 /* GenerationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationViewController.m; sourceTree = "<group>"; };
+		57FD61C81F268E4800554FD5 /* GenerationModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationModuleAssembly.h; sourceTree = "<group>"; };
+		57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationModuleAssembly.m; sourceTree = "<group>"; };
+		57FD61CC1F268E7400554FD5 /* GenerationViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationViewInput.h; sourceTree = "<group>"; };
+		57FD61CD1F268E8400554FD5 /* GenerationViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationViewOutput.h; sourceTree = "<group>"; };
+		57FD61CE1F268F5100554FD5 /* GenerationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationPresenter.h; sourceTree = "<group>"; };
+		57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationPresenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +89,7 @@
 		57FD61981F268BBE00554FD5 /* gener */ = {
 			isa = PBXGroup;
 			children = (
+				57FD61BB1F268DCB00554FD5 /* Modules */,
 				57FD61991F268BBE00554FD5 /* AppDelegate.h */,
 				57FD619A1F268BBE00554FD5 /* AppDelegate.m */,
 				57FD61A21F268BBE00554FD5 /* Assets.xcassets */,
@@ -101,6 +115,61 @@
 				57FD61B21F268BBE00554FD5 /* Info.plist */,
 			);
 			path = generTests;
+			sourceTree = "<group>";
+		};
+		57FD61BB1F268DCB00554FD5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61BC1F268DCB00554FD5 /* Generation */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		57FD61BC1F268DCB00554FD5 /* Generation */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61BD1F268DCB00554FD5 /* Assembly */,
+				57FD61BE1F268DCB00554FD5 /* Model */,
+				57FD61BF1F268DCB00554FD5 /* Presenter */,
+				57FD61C01F268DCB00554FD5 /* View */,
+			);
+			path = Generation;
+			sourceTree = "<group>";
+		};
+		57FD61BD1F268DCB00554FD5 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61C81F268E4800554FD5 /* GenerationModuleAssembly.h */,
+				57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		57FD61BE1F268DCB00554FD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57FD61BF1F268DCB00554FD5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61CE1F268F5100554FD5 /* GenerationPresenter.h */,
+				57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		57FD61C01F268DCB00554FD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61C11F268DF200554FD5 /* GenerationViewController.h */,
+				57FD61C21F268DF200554FD5 /* GenerationViewController.m */,
+				57FD61CC1F268E7400554FD5 /* GenerationViewInput.h */,
+				57FD61CD1F268E8400554FD5 /* GenerationViewOutput.h */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57FD619E1F268BBE00554FD5 /* main.m in Sources */,
+				57FD61D01F268F5100554FD5 /* GenerationPresenter.m in Sources */,
 				57FD619B1F268BBE00554FD5 /* AppDelegate.m in Sources */,
+				57FD61CA1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
+				57FD61C31F268DF200554FD5 /* GenerationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FD61CB1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
+				57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */,
 				57FD61B11F268BBE00554FD5 /* generTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
