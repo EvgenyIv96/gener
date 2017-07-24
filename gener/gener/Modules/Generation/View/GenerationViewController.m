@@ -8,7 +8,14 @@
 
 #import "GenerationViewController.h"
 
+#import "GenerationViewOutput.h"
+
 @interface GenerationViewController ()
+
+@property (weak) IBOutlet NSTextField *pathTextField;
+@property (weak) IBOutlet NSTextField *moduleNameTextField;
+@property (weak) IBOutlet NSButton *choosePathButton;
+@property (weak) IBOutlet NSButton *generateButton;
 
 @end
 
@@ -17,12 +24,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.output didTriggerViewReadyEvent];
+}
+
+#pragma mark - IBActions
+
+- (IBAction)chooseButtonTapped:(NSButton *)sender {
     
 }
 
-#pragma mark - Actions
-
-
+- (IBAction)generateButtonTapped:(NSButton *)sender {
+    
+}
 
 #pragma mark - GenerationViewInput
 
