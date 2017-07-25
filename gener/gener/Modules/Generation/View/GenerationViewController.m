@@ -9,12 +9,18 @@
 #import "GenerationViewController.h"
 
 #import "GenerationViewOutput.h"
+#import "ModuleSettings.h"
 
 @interface GenerationViewController ()
 
 @property (weak) IBOutlet NSTextField *pathTextField;
-@property (weak) IBOutlet NSTextField *moduleNameTextField;
 @property (weak) IBOutlet NSButton *choosePathButton;
+
+@property (weak) IBOutlet NSTextField *moduleNameTextField;
+@property (weak) IBOutlet NSTextField *projectNameTextField;
+@property (weak) IBOutlet NSTextField *authorFullNameTextField;
+@property (weak) IBOutlet NSTextField *companyNameTextField;
+
 @property (weak) IBOutlet NSButton *generateButton;
 
 @end
@@ -34,7 +40,14 @@
 }
 
 - (IBAction)generateButtonTapped:(NSButton *)sender {
-    [self.output didTriggerGenerateButtonTappedEventWithModuleName:[self.moduleNameTextField stringValue]];
+
+    ModuleSettings *moduleSettings = [[ModuleSettings alloc] initWithPath:self.pathTextField.stringValue
+                                                                     name:self.moduleNameTextField.stringValue
+                                                                  project:self.projectNameTextField.stringValue
+                                                                   author:self.authorFullNameTextField.stringValue
+                                                                  company:self.companyNameTextField.stringValue];
+
+    [self.output didTriggerGenerateButtonTappedEventWithModuleSettings:moduleSettings];
 }
 
 #pragma mark - GenerationViewInput
