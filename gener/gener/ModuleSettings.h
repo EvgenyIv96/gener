@@ -10,4 +10,15 @@
 
 @interface ModuleSettings : NSObject
 
+@property (strong, nonatomic) NSString *path;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *project;
+@property (strong, nonatomic) NSString *author;
+@property (strong, nonatomic) NSString *company;
+
+- (instancetype)initWithPath:(NSString *)path name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company;
+
++ (instancetype)settingsWithPath:(NSString *)path name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company;
+
+
 @end
