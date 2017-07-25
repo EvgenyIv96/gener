@@ -19,6 +19,17 @@
 		57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */; };
 		C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */; };
 		C771A45E1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */; };
+		C771A4611F275E4500DA90C7 /* FIleTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4601F275E4500DA90C7 /* FIleTemplate.m */; };
+		C771A4621F275E4500DA90C7 /* FIleTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4601F275E4500DA90C7 /* FIleTemplate.m */; };
+		C771A4651F27624000DA90C7 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4641F27624000DA90C7 /* Generator.m */; };
+		C771A4661F27624000DA90C7 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4641F27624000DA90C7 /* Generator.m */; };
+		C771A4691F27630900DA90C7 /* TemplateJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4681F27630900DA90C7 /* TemplateJSONParser.m */; };
+		C771A46A1F27630900DA90C7 /* TemplateJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4681F27630900DA90C7 /* TemplateJSONParser.m */; };
+		C771A46D1F27633400DA90C7 /* FileCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A46C1F27633400DA90C7 /* FileCreator.m */; };
+		C771A46E1F27633400DA90C7 /* FileCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A46C1F27633400DA90C7 /* FileCreator.m */; };
+		C771A4711F276A8E00DA90C7 /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4701F276A8E00DA90C7 /* SourceFile.m */; };
+		C771A4721F276A8E00DA90C7 /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4701F276A8E00DA90C7 /* SourceFile.m */; };
+		C771A4741F27705B00DA90C7 /* temlate.json in Resources */ = {isa = PBXBuildFile; fileRef = C771A4731F27705B00DA90C7 /* temlate.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,17 @@
 		5C1D885A1F27362600BDF84F /* GenerationModuleRouting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationModuleRouting.h; sourceTree = "<group>"; };
 		C771A45B1F275BC400DA90C7 /* NSURL+GenerURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+GenerURL.h"; sourceTree = "<group>"; };
 		C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GenerURL.m"; sourceTree = "<group>"; };
+		C771A45F1F275E4500DA90C7 /* FIleTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIleTemplate.h; path = gener/Common/Categories/FIleTemplate.h; sourceTree = SOURCE_ROOT; };
+		C771A4601F275E4500DA90C7 /* FIleTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIleTemplate.m; path = gener/Common/Categories/FIleTemplate.m; sourceTree = SOURCE_ROOT; };
+		C771A4631F27624000DA90C7 /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Generator.h; path = gener/Common/Categories/Generator.h; sourceTree = SOURCE_ROOT; };
+		C771A4641F27624000DA90C7 /* Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Generator.m; path = gener/Common/Categories/Generator.m; sourceTree = SOURCE_ROOT; };
+		C771A4671F27630900DA90C7 /* TemplateJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateJSONParser.h; path = gener/Common/Categories/TemplateJSONParser.h; sourceTree = SOURCE_ROOT; };
+		C771A4681F27630900DA90C7 /* TemplateJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateJSONParser.m; path = gener/Common/Categories/TemplateJSONParser.m; sourceTree = SOURCE_ROOT; };
+		C771A46B1F27633400DA90C7 /* FileCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileCreator.h; path = gener/Common/Categories/FileCreator.h; sourceTree = SOURCE_ROOT; };
+		C771A46C1F27633400DA90C7 /* FileCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileCreator.m; path = gener/Common/Categories/FileCreator.m; sourceTree = SOURCE_ROOT; };
+		C771A46F1F276A8E00DA90C7 /* SourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SourceFile.h; path = gener/Common/Categories/SourceFile.h; sourceTree = SOURCE_ROOT; };
+		C771A4701F276A8E00DA90C7 /* SourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SourceFile.m; path = gener/Common/Categories/SourceFile.m; sourceTree = SOURCE_ROOT; };
+		C771A4731F27705B00DA90C7 /* temlate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = temlate.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +123,7 @@
 				57FD61A21F268BBE00554FD5 /* Assets.xcassets */,
 				57FD61A41F268BBE00554FD5 /* Main.storyboard */,
 				57FD61A71F268BBE00554FD5 /* Info.plist */,
+				C771A4731F27705B00DA90C7 /* temlate.json */,
 				57FD619C1F268BBE00554FD5 /* Supporting Files */,
 			);
 			path = gener;
@@ -154,6 +177,16 @@
 		57FD61BE1F268DCB00554FD5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C771A45F1F275E4500DA90C7 /* FIleTemplate.h */,
+				C771A4601F275E4500DA90C7 /* FIleTemplate.m */,
+				C771A4631F27624000DA90C7 /* Generator.h */,
+				C771A4641F27624000DA90C7 /* Generator.m */,
+				C771A4671F27630900DA90C7 /* TemplateJSONParser.h */,
+				C771A4681F27630900DA90C7 /* TemplateJSONParser.m */,
+				C771A46B1F27633400DA90C7 /* FileCreator.h */,
+				C771A46C1F27633400DA90C7 /* FileCreator.m */,
+				C771A46F1F276A8E00DA90C7 /* SourceFile.h */,
+				C771A4701F276A8E00DA90C7 /* SourceFile.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +315,7 @@
 			files = (
 				57FD61A31F268BBE00554FD5 /* Assets.xcassets in Resources */,
 				57FD61A61F268BBE00554FD5 /* Main.storyboard in Resources */,
+				C771A4741F27705B00DA90C7 /* temlate.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,11 +334,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				57FD619E1F268BBE00554FD5 /* main.m in Sources */,
+				C771A4611F275E4500DA90C7 /* FIleTemplate.m in Sources */,
+				C771A4711F276A8E00DA90C7 /* SourceFile.m in Sources */,
 				57FD61D01F268F5100554FD5 /* GenerationPresenter.m in Sources */,
 				57FD619B1F268BBE00554FD5 /* AppDelegate.m in Sources */,
 				57FD61CA1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
+				C771A4651F27624000DA90C7 /* Generator.m in Sources */,
+				C771A46D1F27633400DA90C7 /* FileCreator.m in Sources */,
 				C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
 				57FD61C31F268DF200554FD5 /* GenerationViewController.m in Sources */,
+				C771A4691F27630900DA90C7 /* TemplateJSONParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,10 +351,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C771A4721F276A8E00DA90C7 /* SourceFile.m in Sources */,
+				C771A46E1F27633400DA90C7 /* FileCreator.m in Sources */,
+				C771A4621F275E4500DA90C7 /* FIleTemplate.m in Sources */,
 				57FD61CB1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
 				57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */,
 				C771A45E1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
+				C771A46A1F27630900DA90C7 /* TemplateJSONParser.m in Sources */,
 				57FD61B11F268BBE00554FD5 /* generTests.m in Sources */,
+				C771A4661F27624000DA90C7 /* Generator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
