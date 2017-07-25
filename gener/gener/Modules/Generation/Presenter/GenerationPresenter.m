@@ -13,6 +13,8 @@
 
 #import "GenerationModuleRouting.h"
 
+#import "Generator.h"
+
 #import "NSURL+GenerURL.h"
 
 @interface GenerationPresenter ()
@@ -27,6 +29,15 @@
 
 - (void)didTriggerViewReadyEvent {
     
+    self.generator = [[Generator alloc] init];
+    
+    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
+    
+    NSError *generatorSetupError;
+    
+    [self.generator setupWithTemplatePath:[NSURL URLWithString:pathString] error:&generatorSetupError];
+    
+    [self.view setupInitialState];
 }
 
 - (void)didTriggerChooseButtonTappedEvent {
@@ -46,7 +57,11 @@
     
 }
 
-- (void)didTriggerGenerateButtonTappedEventWithModuleName:(NSString *)moduleName {
+- (void)didTriggerGenerateButtonTappedEventWithModuleSettings:(ModuleSettings *)settings {
+
+    [self.generator setupWithModuleSettings:settings];
+    
+    [self.generator generate];
     
 }
 

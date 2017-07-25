@@ -12,6 +12,7 @@
 #import "TemplateJSONParser.h"
 #import "FileCreator.h"
 #import "SourceFile.h"
+#import "ModuleSettings.h"
 
 @interface Generator ()
 
@@ -52,14 +53,13 @@
     self.fileTemplates = [self.parser parse];
 }
 
-- (void)setupWithRootDestinationPath:(NSURL *)rootPath moduleName:(NSString *)moduleName {
+- (void)setupWithModuleSettings:(ModuleSettings *)settings {
     
     NSMutableArray *sourceFiles = [[NSMutableArray alloc] init];
     
     for (FIleTemplate *template in self.fileTemplates) {
-        SourceFile *file = [[SourceFile alloc] initWithFileTemplate:template];
-        [file setupWithRootPath:rootPath moduleName:moduleName];
-        
+        SourceFile *file = [[SourceFile alloc] initWithFileTemplate:template settings:settings];
+        [file configure];
         [sourceFiles addObject:file];
     }
     

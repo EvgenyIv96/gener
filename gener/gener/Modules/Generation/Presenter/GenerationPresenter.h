@@ -13,9 +13,13 @@
 @protocol GenerationViewInput;
 @protocol GenerationModuleRouting;
 
+@class Generator;
+
 @interface GenerationPresenter : NSObject <GenerationViewOutput>
 
 @property (weak, nonatomic) id<GenerationViewInput> view;
 @property (weak, nonatomic) id<GenerationModuleRouting> router;
+
+@property (strong, nonatomic) Generator *generator;
 
 @end

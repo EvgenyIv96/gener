@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class ModuleSettings;
+
 @interface Generator : NSObject
 
 /**
@@ -20,14 +22,13 @@
 
 
 /**
- Configures generator with destination path and module name
+ Configures generator with settings
 
  Last preparation before generating files
 
- @param rootPath root path of new module
- @param moduleName name of new module
+ @param settings ModuleSettings settings of new module
  */
-- (void)setupWithRootDestinationPath:(NSURL *)rootPath moduleName:(NSString *)moduleName;
+- (void)setupWithModuleSettings:(ModuleSettings *)settings;
 
 /**
  Generates new module
