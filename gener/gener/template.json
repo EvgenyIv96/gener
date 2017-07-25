@@ -1,0 +1,8 @@
+{
+    "templates": [{
+                  "name": "ViewInput",
+                  "extension": ".h",
+                  "destination_path": "view",
+                  "template_path": "/Users/yuprivezentsev/Documents/Development/GitHub/gener/gener/gener/testTemplate.txt"
+                  }]
+}

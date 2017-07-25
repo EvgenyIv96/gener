@@ -29,7 +29,11 @@
 		C771A46E1F27633400DA90C7 /* FileCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A46C1F27633400DA90C7 /* FileCreator.m */; };
 		C771A4711F276A8E00DA90C7 /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4701F276A8E00DA90C7 /* SourceFile.m */; };
 		C771A4721F276A8E00DA90C7 /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4701F276A8E00DA90C7 /* SourceFile.m */; };
-		C771A4741F27705B00DA90C7 /* temlate.json in Resources */ = {isa = PBXBuildFile; fileRef = C771A4731F27705B00DA90C7 /* temlate.json */; };
+		C771A4741F27705B00DA90C7 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = C771A4731F27705B00DA90C7 /* template.json */; };
+		C771A4771F277DFB00DA90C7 /* ModuleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4761F277DFB00DA90C7 /* ModuleSettings.m */; };
+		C771A4781F277DFB00DA90C7 /* ModuleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4761F277DFB00DA90C7 /* ModuleSettings.m */; };
+		C771A47A1F27852700DA90C7 /* testTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = C771A4791F27852700DA90C7 /* testTemplate.txt */; };
+		C771A47B1F27852700DA90C7 /* testTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = C771A4791F27852700DA90C7 /* testTemplate.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +78,10 @@
 		C771A46C1F27633400DA90C7 /* FileCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileCreator.m; path = gener/Common/Categories/FileCreator.m; sourceTree = SOURCE_ROOT; };
 		C771A46F1F276A8E00DA90C7 /* SourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SourceFile.h; path = gener/Common/Categories/SourceFile.h; sourceTree = SOURCE_ROOT; };
 		C771A4701F276A8E00DA90C7 /* SourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SourceFile.m; path = gener/Common/Categories/SourceFile.m; sourceTree = SOURCE_ROOT; };
-		C771A4731F27705B00DA90C7 /* temlate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = temlate.json; sourceTree = "<group>"; };
+		C771A4731F27705B00DA90C7 /* template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
+		C771A4751F277DFB00DA90C7 /* ModuleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleSettings.h; path = gener/ModuleSettings.h; sourceTree = SOURCE_ROOT; };
+		C771A4761F277DFB00DA90C7 /* ModuleSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleSettings.m; path = gener/ModuleSettings.m; sourceTree = SOURCE_ROOT; };
+		C771A4791F27852700DA90C7 /* testTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testTemplate.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +130,8 @@
 				57FD61A21F268BBE00554FD5 /* Assets.xcassets */,
 				57FD61A41F268BBE00554FD5 /* Main.storyboard */,
 				57FD61A71F268BBE00554FD5 /* Info.plist */,
-				C771A4731F27705B00DA90C7 /* temlate.json */,
+				C771A4731F27705B00DA90C7 /* template.json */,
+				C771A4791F27852700DA90C7 /* testTemplate.txt */,
 				57FD619C1F268BBE00554FD5 /* Supporting Files */,
 			);
 			path = gener;
@@ -187,6 +195,8 @@
 				C771A46C1F27633400DA90C7 /* FileCreator.m */,
 				C771A46F1F276A8E00DA90C7 /* SourceFile.h */,
 				C771A4701F276A8E00DA90C7 /* SourceFile.m */,
+				C771A4751F277DFB00DA90C7 /* ModuleSettings.h */,
+				C771A4761F277DFB00DA90C7 /* ModuleSettings.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,7 +325,8 @@
 			files = (
 				57FD61A31F268BBE00554FD5 /* Assets.xcassets in Resources */,
 				57FD61A61F268BBE00554FD5 /* Main.storyboard in Resources */,
-				C771A4741F27705B00DA90C7 /* temlate.json in Resources */,
+				C771A47A1F27852700DA90C7 /* testTemplate.txt in Resources */,
+				C771A4741F27705B00DA90C7 /* template.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C771A47B1F27852700DA90C7 /* testTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,7 @@
 				57FD61D01F268F5100554FD5 /* GenerationPresenter.m in Sources */,
 				57FD619B1F268BBE00554FD5 /* AppDelegate.m in Sources */,
 				57FD61CA1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
+				C771A4771F277DFB00DA90C7 /* ModuleSettings.m in Sources */,
 				C771A4651F27624000DA90C7 /* Generator.m in Sources */,
 				C771A46D1F27633400DA90C7 /* FileCreator.m in Sources */,
 				C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
@@ -355,6 +368,7 @@
 				C771A46E1F27633400DA90C7 /* FileCreator.m in Sources */,
 				C771A4621F275E4500DA90C7 /* FIleTemplate.m in Sources */,
 				57FD61CB1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
+				C771A4781F277DFB00DA90C7 /* ModuleSettings.m in Sources */,
 				57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */,
 				C771A45E1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
 				C771A46A1F27630900DA90C7 /* TemplateJSONParser.m in Sources */,
