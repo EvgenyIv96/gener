@@ -17,6 +17,9 @@
 		57FD61CB1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */; };
 		57FD61D01F268F5100554FD5 /* GenerationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */; };
 		57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */; };
+		5C1D8A081F27A86600BDF84F /* Assembly in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D8A051F27A86600BDF84F /* Assembly */; };
+		5C1D8A091F27A86600BDF84F /* Presenter in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D8A061F27A86600BDF84F /* Presenter */; };
+		5C1D8A0A1F27A86600BDF84F /* View in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D8A071F27A86600BDF84F /* View */; };
 		C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */; };
 		C771A45E1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */; };
 		C771A4611F275E4500DA90C7 /* FIleTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4601F275E4500DA90C7 /* FIleTemplate.m */; };
@@ -66,6 +69,9 @@
 		57FD61CE1F268F5100554FD5 /* GenerationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationPresenter.h; sourceTree = "<group>"; };
 		57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationPresenter.m; sourceTree = "<group>"; };
 		5C1D885A1F27362600BDF84F /* GenerationModuleRouting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationModuleRouting.h; sourceTree = "<group>"; };
+		5C1D8A051F27A86600BDF84F /* Assembly */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assembly; sourceTree = "<group>"; };
+		5C1D8A061F27A86600BDF84F /* Presenter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presenter; sourceTree = "<group>"; };
+		5C1D8A071F27A86600BDF84F /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
 		C771A45B1F275BC400DA90C7 /* NSURL+GenerURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+GenerURL.h"; sourceTree = "<group>"; };
 		C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GenerURL.m"; sourceTree = "<group>"; };
 		C771A45F1F275E4500DA90C7 /* FIleTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIleTemplate.h; path = gener/Common/Categories/FIleTemplate.h; sourceTree = SOURCE_ROOT; };
@@ -123,6 +129,9 @@
 		57FD61981F268BBE00554FD5 /* gener */ = {
 			isa = PBXGroup;
 			children = (
+				5C1D8A051F27A86600BDF84F /* Assembly */,
+				5C1D8A061F27A86600BDF84F /* Presenter */,
+				5C1D8A071F27A86600BDF84F /* View */,
 				C771A4551F275B6600DA90C7 /* Common */,
 				57FD61BB1F268DCB00554FD5 /* Modules */,
 				57FD61991F268BBE00554FD5 /* AppDelegate.h */,
@@ -324,7 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57FD61A31F268BBE00554FD5 /* Assets.xcassets in Resources */,
+				5C1D8A0A1F27A86600BDF84F /* View in Resources */,
+				5C1D8A081F27A86600BDF84F /* Assembly in Resources */,
 				57FD61A61F268BBE00554FD5 /* Main.storyboard in Resources */,
+				5C1D8A091F27A86600BDF84F /* Presenter in Resources */,
 				C771A47A1F27852700DA90C7 /* testTemplate.txt in Resources */,
 				C771A4741F27705B00DA90C7 /* template.json in Resources */,
 			);

@@ -18,11 +18,16 @@
         _nameTemplate = json[@"name"];
         _extension = json[@"extension"];
         
-        NSURL *destination = [NSURL URLWithString:json[@"destination_path"]];
-        NSURL *tempaltePath = [NSURL URLWithString:json[@"template_path"]];
+        NSURL *destinationURL = [NSURL URLWithString:json[@"destination_path"]];
         
-        _destinationPath = destination;
-        _templatePath = tempaltePath;
+        NSString *templatePath = json[@"template_path"];
+        NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
+        NSString *fullPath = [bundlePath stringByAppendingPathComponent:templatePath];
+        
+        NSURL *tempaltePathURL = [NSURL URLWithString:fullPath];
+        
+        _destinationPath = destinationURL;
+        _templatePath = tempaltePathURL;
         
     }
     return self;
