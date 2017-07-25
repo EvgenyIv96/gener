@@ -9,11 +9,22 @@
 #import <Foundation/Foundation.h>
 
 @class FIleTemplate;
+@class ModuleSettings;
 
 @interface SourceFile : NSObject
 
-- (instancetype)initWithFileTemplate:(FIleTemplate *)fileTemplate;
+- (instancetype)initWithFileTemplate:(FIleTemplate *)fileTemplate settings:(ModuleSettings *)settings;
 
-- (void)setupWithRootPath:(NSURL *)rootPath moduleName:(NSString *)name;
+- (void)configure;
+
+- (NSString *)content;
+
+- (NSString *)destinationPath;
+
+- (NSString *)extention;
+
+- (NSString *)name;
+
++ (instancetype)fileWithFileTemplate:(FIleTemplate *)fileTemplate settings:(ModuleSettings *)settings;
 
 @end
