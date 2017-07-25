@@ -48,6 +48,7 @@
 		57FD61CD1F268E8400554FD5 /* GenerationViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationViewOutput.h; sourceTree = "<group>"; };
 		57FD61CE1F268F5100554FD5 /* GenerationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationPresenter.h; sourceTree = "<group>"; };
 		57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationPresenter.m; sourceTree = "<group>"; };
+		5C1D885A1F27362600BDF84F /* GenerationModuleRouting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationModuleRouting.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +169,7 @@
 				57FD61C21F268DF200554FD5 /* GenerationViewController.m */,
 				57FD61CC1F268E7400554FD5 /* GenerationViewInput.h */,
 				57FD61CD1F268E8400554FD5 /* GenerationViewOutput.h */,
+				5C1D885A1F27362600BDF84F /* GenerationModuleRouting.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -477,6 +479,7 @@
 				57FD61B71F268BBE00554FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57FD61B81F268BBE00554FD5 /* Build configuration list for PBXNativeTarget "generTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +488,7 @@
 				57FD61BA1F268BBE00554FD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

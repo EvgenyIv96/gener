@@ -30,11 +30,11 @@
 #pragma mark - IBActions
 
 - (IBAction)chooseButtonTapped:(NSButton *)sender {
-    
+    [self.output didTriggerChooseButtonTappedEvent];
 }
 
 - (IBAction)generateButtonTapped:(NSButton *)sender {
-    
+    [self.output didTriggerGenerateButtonTappedEventWithModuleName:[self.moduleNameTextField stringValue]];
 }
 
 #pragma mark - GenerationViewInput
@@ -43,5 +43,28 @@
     
 }
 
+- (void)updateViewWithNewModulePathString:(NSString *)modulePathString {
+    [self.pathTextField setStringValue:modulePathString];
+}
+
+#pragma mark - Routing 
+
+- (void)openChooseDirectoryOpenPanelWithCompletion:(void (^) (NSOpenPanel *openPanel, NSInteger result))completion {
+    
+    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+    openPanel.canChooseFiles = NO;
+    openPanel.canChooseDirectories = YES;
+    openPanel.canCreateDirectories = YES;
+    openPanel.allowsMultipleSelection = NO;
+    
+    [openPanel beginSheetModalForWindow:self.view.window completionHandler:^(NSInteger result) {
+        
+        if (completion) {
+            completion(openPanel, result);
+        }
+        
+    }];
+
+}
 
 @end

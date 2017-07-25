@@ -7,15 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import "GenerationModuleAssembly.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic) NSWindow *window;
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    [[GenerationModuleAssembly new] buildGenerationModuleWithCompletion:^(NSViewController *viewController) {
+        
+        self.window = [NSWindow windowWithContentViewController:viewController];
+        
+        [self.window makeKeyAndOrderFront:NSApp];
+        
+    }];
+    
 }
 
 

@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+@class NSViewController;
 
 @interface GenerationModuleAssembly : NSObject
+
+- (void)buildGenerationModuleWithCompletion:(void (^) (NSViewController *viewController))completion;
 
 @end

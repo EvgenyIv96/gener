@@ -9,10 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 #import "GenerationViewInput.h"
+#import "GenerationModuleRouting.h"
 
 @protocol GenerationViewOutput;
 
-@interface GenerationViewController : NSViewController <GenerationViewInput>
+@interface GenerationViewController : NSViewController <GenerationViewInput, GenerationModuleRouting>
 
 @property (strong, nonatomic) id<GenerationViewOutput> output;
 

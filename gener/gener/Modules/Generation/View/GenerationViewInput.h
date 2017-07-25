@@ -10,6 +10,18 @@
 
 @protocol GenerationViewInput <NSObject>
 
+
+/**
+ Method is used to setup initial view state.
+ */
 - (void)setupInitialState;
+
+
+/**
+ Method is used to update view with new module path string.
+
+ @param modulePathString NSString String with module path.
+ */
+- (void)updateViewWithNewModulePathString:(NSString *)modulePathString;
 
 @end

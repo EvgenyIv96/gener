@@ -11,9 +11,11 @@
 #import "GenerationViewOutput.h"
 
 @protocol GenerationViewInput;
+@protocol GenerationModuleRouting;
 
 @interface GenerationPresenter : NSObject <GenerationViewOutput>
 
 @property (weak, nonatomic) id<GenerationViewInput> view;
+@property (weak, nonatomic) id<GenerationModuleRouting> router;
 
 @end

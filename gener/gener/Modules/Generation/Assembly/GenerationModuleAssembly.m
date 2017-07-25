@@ -7,7 +7,24 @@
 //
 
 #import "GenerationModuleAssembly.h"
+#import "GenerationViewController.h"
+#import "GenerationPresenter.h"
 
 @implementation GenerationModuleAssembly
+
+- (void)buildGenerationModuleWithCompletion:(void (^) (NSViewController *viewController))completion {
+    
+    //Creating module components
+    GenerationViewController *viewController = [[NSStoryboard storyboardWithName:@"Main" bundle:nil] instantiateControllerWithIdentifier:@"GenerationViewController"];
+    GenerationPresenter *presenter = [[GenerationPresenter alloc] init];
+    
+    //Inject properties
+    viewController.output = presenter;
+    presenter.view = viewController;
+    presenter.router = viewController;
+    
+    completion(viewController);
+    
+}
 
 @end
