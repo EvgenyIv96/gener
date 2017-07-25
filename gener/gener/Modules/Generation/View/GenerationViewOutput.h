@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class ModuleSettings;
+
 @protocol GenerationViewOutput <NSObject>
 
 /**
@@ -23,8 +25,8 @@
 /**
  Method is used to tell presenter that generate button was tapped.
  
- @parameter moduleName NSString Name of module that will be generated.
+ @parameter settings ModuleSettings settings of module that will be generated.
  */
-- (void)didTriggerGenerateButtonTappedEventWithModuleName:(NSString *)moduleName;
+- (void)didTriggerGenerateButtonTappedEventWithModuleSettings:(ModuleSettings *)settings;
 
 @end
