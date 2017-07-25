@@ -1,0 +1,8 @@
+{
+    "templates": [{
+                  "name": "name",
+                  "extension": ".m",
+                  "destination_path": "/view",
+                  "template_path": "../path"
+                  }]
+}
