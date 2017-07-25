@@ -13,6 +13,8 @@
 
 #import "GenerationModuleRouting.h"
 
+#import "NSURL+GenerURL.h"
+
 @interface GenerationPresenter ()
 
 @property (strong, nonatomic) NSURL *mainPathURL;
@@ -35,7 +37,7 @@
             self.mainPathURL = panel.URLs[0];
             NSLog(@"New mainPathURL: %@", self.mainPathURL);
             
-            NSString *pathString = [self cutFilePrefixFromURLString:[self.mainPathURL absoluteString]];
+            NSString *pathString = [self.mainPathURL URLStringWithoutFilePrefix];
             
             [self.view updateViewWithNewModulePathString:pathString];
         }
@@ -50,12 +52,5 @@
 
 #pragma mark - Private Methods
 
-- (NSString *)cutFilePrefixFromURLString:(NSString *)urlString {
-
-    NSString *newString = [urlString stringByReplacingOccurrencesOfString:@"file://" withString:@""];
-    
-    return newString;
-    
-}
 
 @end
