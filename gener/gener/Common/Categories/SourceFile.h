@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class FIleTemplate;
+
 @interface SourceFile : NSObject
+
+- (instancetype)initWithFileTemplate:(FIleTemplate *)fileTemplate;
+
+- (void)setupWithRootPath:(NSURL *)rootPath moduleName:(NSString *)name;
 
 @end

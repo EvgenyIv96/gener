@@ -10,4 +10,6 @@
 
 @interface FileCreator : NSObject
 
+- (void)createFilesFromArray:(NSArray *)templates error:(NSError **)error;
+
 @end
