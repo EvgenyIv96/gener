@@ -1,0 +1,43 @@
+//
+//  $moduleName$ViewController.m
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+#import "$moduleName$ViewController.h"
+#import "$moduleName$ViewOutput.h"
+
+@interface $moduleName$ViewController ()
+
+@end
+
+@implementation $moduleName$ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    [self.output didTriggerViewReadyEvent];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - $moduleName$ViewInput
+
+- (void)setupInitialState {
+
+}
+
+#pragma mark - $moduleName$ModuleRouting
+
+@end

@@ -1,0 +1,69 @@
+{
+    "templates": [
+
+      {
+        "name": "ModuleInput",
+        "extension": ".h",
+        "destination_path": "Presenter",
+        "template_path": "Presenter/ModuleInputHeader.gentemp"
+      },
+      {
+        "name": "ViewInput",
+        "extension": ".h",
+        "destination_path": "View",
+        "template_path": "View/ViewInputHeader.gentemp"
+      },
+      {
+        "name": "ViewOutput",
+        "extension": ".h",
+        "destination_path": "View",
+        "template_path": "View/ViewOutputHeader.gentemp"
+      },
+      {
+        "name": "ModuleRouting",
+        "extension": ".h",
+        "destination_path": "View",
+        "template_path": "View/ModuleRoutingHeader.gentemp"
+      },
+
+      {
+        "name": "ViewController",
+        "extension": ".h",
+        "destination_path": "View",
+        "template_path": "View/ViewControllerHeader.gentemp"
+      },
+      {
+        "name": "ViewController",
+        "extension": ".m",
+        "destination_path": "View",
+        "template_path": "View/ViewControllerImplementation.gentemp"
+      },
+
+      {
+        "name": "Presenter",
+        "extension": ".h",
+        "destination_path": "Presenter",
+        "template_path": "Presenter/PresenterHeader.gentemp"
+      },
+      {
+        "name": "Presenter",
+        "extension": ".m",
+        "destination_path": "Presenter",
+        "template_path": "Presenter/PresenterImplementation.gentemp"
+      },
+
+      {
+        "name": "ModuleAssembly",
+        "extension": ".h",
+        "destination_path": "Assembly",
+        "template_path": "Assembly/ModuleAsseblyHeader.gentemp"
+      },
+      {
+        "name": "ModuleAssembly",
+        "extension": ".m",
+        "destination_path": "Assembly",
+        "template_path": "Assembly/ModuleAssemblyImplementation.gentemp"
+      },
+
+    ]
+}

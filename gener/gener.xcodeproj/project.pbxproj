@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57FD619B1F268BBE00554FD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD619A1F268BBE00554FD5 /* AppDelegate.m */; };
+		57FD619E1F268BBE00554FD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD619D1F268BBE00554FD5 /* main.m */; };
+		57FD61A31F268BBE00554FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FD61A21F268BBE00554FD5 /* Assets.xcassets */; };
+		57FD61A61F268BBE00554FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FD61A41F268BBE00554FD5 /* Main.storyboard */; };
+		57FD61B11F268BBE00554FD5 /* generTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61B01F268BBE00554FD5 /* generTests.m */; };
+		57FD61C31F268DF200554FD5 /* GenerationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61C21F268DF200554FD5 /* GenerationViewController.m */; };
+		57FD61CA1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */; };
+		57FD61CB1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */; };
+		57FD61D01F268F5100554FD5 /* GenerationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */; };
+		57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */; };
+		5C1D8A081F27A86600BDF84F /* Assembly in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D8A051F27A86600BDF84F /* Assembly */; };
+		5C1D8A091F27A86600BDF84F /* Presenter in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D8A061F27A86600BDF84F /* Presenter */; };
+		5C1D8A0A1F27A86600BDF84F /* View in Resources */ = {isa = PBXBuildFile; fileRef = 5C1D8A071F27A86600BDF84F /* View */; };
+		C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */; };
+		C771A45E1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */; };
+		C771A4611F275E4500DA90C7 /* FIleTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4601F275E4500DA90C7 /* FIleTemplate.m */; };
+		C771A4621F275E4500DA90C7 /* FIleTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4601F275E4500DA90C7 /* FIleTemplate.m */; };
+		C771A4651F27624000DA90C7 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4641F27624000DA90C7 /* Generator.m */; };
+		C771A4661F27624000DA90C7 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4641F27624000DA90C7 /* Generator.m */; };
+		C771A4691F27630900DA90C7 /* TemplateJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4681F27630900DA90C7 /* TemplateJSONParser.m */; };
+		C771A46A1F27630900DA90C7 /* TemplateJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4681F27630900DA90C7 /* TemplateJSONParser.m */; };
+		C771A46D1F27633400DA90C7 /* FileCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A46C1F27633400DA90C7 /* FileCreator.m */; };
+		C771A46E1F27633400DA90C7 /* FileCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A46C1F27633400DA90C7 /* FileCreator.m */; };
+		C771A4711F276A8E00DA90C7 /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4701F276A8E00DA90C7 /* SourceFile.m */; };
+		C771A4721F276A8E00DA90C7 /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4701F276A8E00DA90C7 /* SourceFile.m */; };
+		C771A4741F27705B00DA90C7 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = C771A4731F27705B00DA90C7 /* template.json */; };
+		C771A4771F277DFB00DA90C7 /* ModuleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4761F277DFB00DA90C7 /* ModuleSettings.m */; };
+		C771A4781F277DFB00DA90C7 /* ModuleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A4761F277DFB00DA90C7 /* ModuleSettings.m */; };
+		C771A47A1F27852700DA90C7 /* testTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = C771A4791F27852700DA90C7 /* testTemplate.txt */; };
+		C771A47B1F27852700DA90C7 /* testTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = C771A4791F27852700DA90C7 /* testTemplate.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57FD61AD1F268BBE00554FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57FD618E1F268BBD00554FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57FD61951F268BBD00554FD5;
+			remoteInfo = gener;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57FD61961F268BBE00554FD5 /* gener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gener.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FD61991F268BBE00554FD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		57FD619A1F268BBE00554FD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		57FD619D1F268BBE00554FD5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57FD61A21F268BBE00554FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57FD61A51F268BBE00554FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57FD61A71F268BBE00554FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FD61AC1F268BBE00554FD5 /* generTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = generTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FD61B01F268BBE00554FD5 /* generTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = generTests.m; sourceTree = "<group>"; };
+		57FD61B21F268BBE00554FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57FD61C11F268DF200554FD5 /* GenerationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationViewController.h; sourceTree = "<group>"; };
+		57FD61C21F268DF200554FD5 /* GenerationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationViewController.m; sourceTree = "<group>"; };
+		57FD61C81F268E4800554FD5 /* GenerationModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationModuleAssembly.h; sourceTree = "<group>"; };
+		57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationModuleAssembly.m; sourceTree = "<group>"; };
+		57FD61CC1F268E7400554FD5 /* GenerationViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationViewInput.h; sourceTree = "<group>"; };
+		57FD61CD1F268E8400554FD5 /* GenerationViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationViewOutput.h; sourceTree = "<group>"; };
+		57FD61CE1F268F5100554FD5 /* GenerationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationPresenter.h; sourceTree = "<group>"; };
+		57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerationPresenter.m; sourceTree = "<group>"; };
+		5C1D885A1F27362600BDF84F /* GenerationModuleRouting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationModuleRouting.h; sourceTree = "<group>"; };
+		5C1D8A051F27A86600BDF84F /* Assembly */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assembly; sourceTree = "<group>"; };
+		5C1D8A061F27A86600BDF84F /* Presenter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Presenter; sourceTree = "<group>"; };
+		5C1D8A071F27A86600BDF84F /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
+		C771A45B1F275BC400DA90C7 /* NSURL+GenerURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+GenerURL.h"; sourceTree = "<group>"; };
+		C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GenerURL.m"; sourceTree = "<group>"; };
+		C771A45F1F275E4500DA90C7 /* FIleTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIleTemplate.h; path = gener/Common/Categories/FIleTemplate.h; sourceTree = SOURCE_ROOT; };
+		C771A4601F275E4500DA90C7 /* FIleTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIleTemplate.m; path = gener/Common/Categories/FIleTemplate.m; sourceTree = SOURCE_ROOT; };
+		C771A4631F27624000DA90C7 /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Generator.h; path = gener/Common/Categories/Generator.h; sourceTree = SOURCE_ROOT; };
+		C771A4641F27624000DA90C7 /* Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Generator.m; path = gener/Common/Categories/Generator.m; sourceTree = SOURCE_ROOT; };
+		C771A4671F27630900DA90C7 /* TemplateJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateJSONParser.h; path = gener/Common/Categories/TemplateJSONParser.h; sourceTree = SOURCE_ROOT; };
+		C771A4681F27630900DA90C7 /* TemplateJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateJSONParser.m; path = gener/Common/Categories/TemplateJSONParser.m; sourceTree = SOURCE_ROOT; };
+		C771A46B1F27633400DA90C7 /* FileCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileCreator.h; path = gener/Common/Categories/FileCreator.h; sourceTree = SOURCE_ROOT; };
+		C771A46C1F27633400DA90C7 /* FileCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileCreator.m; path = gener/Common/Categories/FileCreator.m; sourceTree = SOURCE_ROOT; };
+		C771A46F1F276A8E00DA90C7 /* SourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SourceFile.h; path = gener/Common/Categories/SourceFile.h; sourceTree = SOURCE_ROOT; };
+		C771A4701F276A8E00DA90C7 /* SourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SourceFile.m; path = gener/Common/Categories/SourceFile.m; sourceTree = SOURCE_ROOT; };
+		C771A4731F27705B00DA90C7 /* template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
+		C771A4751F277DFB00DA90C7 /* ModuleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleSettings.h; path = gener/ModuleSettings.h; sourceTree = SOURCE_ROOT; };
+		C771A4761F277DFB00DA90C7 /* ModuleSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleSettings.m; path = gener/ModuleSettings.m; sourceTree = SOURCE_ROOT; };
+		C771A4791F27852700DA90C7 /* testTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testTemplate.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57FD61931F268BBD00554FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FD61A91F268BBE00554FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57FD618D1F268BBD00554FD5 = {
+			isa = PBXGroup;
+			children = (
+				57FD61981F268BBE00554FD5 /* gener */,
+				57FD61AF1F268BBE00554FD5 /* generTests */,
+				57FD61971F268BBE00554FD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57FD61971F268BBE00554FD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61961F268BBE00554FD5 /* gener.app */,
+				57FD61AC1F268BBE00554FD5 /* generTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57FD61981F268BBE00554FD5 /* gener */ = {
+			isa = PBXGroup;
+			children = (
+				5C1D8A051F27A86600BDF84F /* Assembly */,
+				5C1D8A061F27A86600BDF84F /* Presenter */,
+				5C1D8A071F27A86600BDF84F /* View */,
+				C771A4551F275B6600DA90C7 /* Common */,
+				57FD61BB1F268DCB00554FD5 /* Modules */,
+				57FD61991F268BBE00554FD5 /* AppDelegate.h */,
+				57FD619A1F268BBE00554FD5 /* AppDelegate.m */,
+				57FD61A21F268BBE00554FD5 /* Assets.xcassets */,
+				57FD61A41F268BBE00554FD5 /* Main.storyboard */,
+				57FD61A71F268BBE00554FD5 /* Info.plist */,
+				C771A4731F27705B00DA90C7 /* template.json */,
+				C771A4791F27852700DA90C7 /* testTemplate.txt */,
+				57FD619C1F268BBE00554FD5 /* Supporting Files */,
+			);
+			path = gener;
+			sourceTree = "<group>";
+		};
+		57FD619C1F268BBE00554FD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57FD619D1F268BBE00554FD5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57FD61AF1F268BBE00554FD5 /* generTests */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61B01F268BBE00554FD5 /* generTests.m */,
+				57FD61B21F268BBE00554FD5 /* Info.plist */,
+			);
+			path = generTests;
+			sourceTree = "<group>";
+		};
+		57FD61BB1F268DCB00554FD5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61BC1F268DCB00554FD5 /* Generation */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		57FD61BC1F268DCB00554FD5 /* Generation */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61BD1F268DCB00554FD5 /* Assembly */,
+				57FD61BE1F268DCB00554FD5 /* Model */,
+				57FD61BF1F268DCB00554FD5 /* Presenter */,
+				57FD61C01F268DCB00554FD5 /* View */,
+			);
+			path = Generation;
+			sourceTree = "<group>";
+		};
+		57FD61BD1F268DCB00554FD5 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61C81F268E4800554FD5 /* GenerationModuleAssembly.h */,
+				57FD61C91F268E4800554FD5 /* GenerationModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		57FD61BE1F268DCB00554FD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C771A45F1F275E4500DA90C7 /* FIleTemplate.h */,
+				C771A4601F275E4500DA90C7 /* FIleTemplate.m */,
+				C771A4631F27624000DA90C7 /* Generator.h */,
+				C771A4641F27624000DA90C7 /* Generator.m */,
+				C771A4671F27630900DA90C7 /* TemplateJSONParser.h */,
+				C771A4681F27630900DA90C7 /* TemplateJSONParser.m */,
+				C771A46B1F27633400DA90C7 /* FileCreator.h */,
+				C771A46C1F27633400DA90C7 /* FileCreator.m */,
+				C771A46F1F276A8E00DA90C7 /* SourceFile.h */,
+				C771A4701F276A8E00DA90C7 /* SourceFile.m */,
+				C771A4751F277DFB00DA90C7 /* ModuleSettings.h */,
+				C771A4761F277DFB00DA90C7 /* ModuleSettings.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57FD61BF1F268DCB00554FD5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61CE1F268F5100554FD5 /* GenerationPresenter.h */,
+				57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		57FD61C01F268DCB00554FD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57FD61C11F268DF200554FD5 /* GenerationViewController.h */,
+				57FD61C21F268DF200554FD5 /* GenerationViewController.m */,
+				57FD61CC1F268E7400554FD5 /* GenerationViewInput.h */,
+				57FD61CD1F268E8400554FD5 /* GenerationViewOutput.h */,
+				5C1D885A1F27362600BDF84F /* GenerationModuleRouting.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C771A4551F275B6600DA90C7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C771A4561F275B6600DA90C7 /* Categories */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C771A4561F275B6600DA90C7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C771A45B1F275BC400DA90C7 /* NSURL+GenerURL.h */,
+				C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57FD61951F268BBD00554FD5 /* gener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57FD61B51F268BBE00554FD5 /* Build configuration list for PBXNativeTarget "gener" */;
+			buildPhases = (
+				57FD61921F268BBD00554FD5 /* Sources */,
+				57FD61931F268BBD00554FD5 /* Frameworks */,
+				57FD61941F268BBD00554FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gener;
+			productName = gener;
+			productReference = 57FD61961F268BBE00554FD5 /* gener.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57FD61AB1F268BBE00554FD5 /* generTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57FD61B81F268BBE00554FD5 /* Build configuration list for PBXNativeTarget "generTests" */;
+			buildPhases = (
+				57FD61A81F268BBE00554FD5 /* Sources */,
+				57FD61A91F268BBE00554FD5 /* Frameworks */,
+				57FD61AA1F268BBE00554FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57FD61AE1F268BBE00554FD5 /* PBXTargetDependency */,
+			);
+			name = generTests;
+			productName = generTests;
+			productReference = 57FD61AC1F268BBE00554FD5 /* generTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57FD618E1F268BBD00554FD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = GNR;
+				TargetAttributes = {
+					57FD61951F268BBD00554FD5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3DP67SJXSR;
+						ProvisioningStyle = Automatic;
+					};
+					57FD61AB1F268BBE00554FD5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3DP67SJXSR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 57FD61951F268BBD00554FD5;
+					};
+				};
+			};
+			buildConfigurationList = 57FD61911F268BBD00554FD5 /* Build configuration list for PBXProject "gener" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57FD618D1F268BBD00554FD5;
+			productRefGroup = 57FD61971F268BBE00554FD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57FD61951F268BBD00554FD5 /* gener */,
+				57FD61AB1F268BBE00554FD5 /* generTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57FD61941F268BBD00554FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FD61A31F268BBE00554FD5 /* Assets.xcassets in Resources */,
+				5C1D8A0A1F27A86600BDF84F /* View in Resources */,
+				5C1D8A081F27A86600BDF84F /* Assembly in Resources */,
+				57FD61A61F268BBE00554FD5 /* Main.storyboard in Resources */,
+				5C1D8A091F27A86600BDF84F /* Presenter in Resources */,
+				C771A47A1F27852700DA90C7 /* testTemplate.txt in Resources */,
+				C771A4741F27705B00DA90C7 /* template.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FD61AA1F268BBE00554FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C771A47B1F27852700DA90C7 /* testTemplate.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57FD61921F268BBD00554FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FD619E1F268BBE00554FD5 /* main.m in Sources */,
+				C771A4611F275E4500DA90C7 /* FIleTemplate.m in Sources */,
+				C771A4711F276A8E00DA90C7 /* SourceFile.m in Sources */,
+				57FD61D01F268F5100554FD5 /* GenerationPresenter.m in Sources */,
+				57FD619B1F268BBE00554FD5 /* AppDelegate.m in Sources */,
+				57FD61CA1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
+				C771A4771F277DFB00DA90C7 /* ModuleSettings.m in Sources */,
+				C771A4651F27624000DA90C7 /* Generator.m in Sources */,
+				C771A46D1F27633400DA90C7 /* FileCreator.m in Sources */,
+				C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
+				57FD61C31F268DF200554FD5 /* GenerationViewController.m in Sources */,
+				C771A4691F27630900DA90C7 /* TemplateJSONParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FD61A81F268BBE00554FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C771A4721F276A8E00DA90C7 /* SourceFile.m in Sources */,
+				C771A46E1F27633400DA90C7 /* FileCreator.m in Sources */,
+				C771A4621F275E4500DA90C7 /* FIleTemplate.m in Sources */,
+				57FD61CB1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
+				C771A4781F277DFB00DA90C7 /* ModuleSettings.m in Sources */,
+				57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */,
+				C771A45E1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
+				C771A46A1F27630900DA90C7 /* TemplateJSONParser.m in Sources */,
+				57FD61B11F268BBE00554FD5 /* generTests.m in Sources */,
+				C771A4661F27624000DA90C7 /* Generator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57FD61AE1F268BBE00554FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57FD61951F268BBD00554FD5 /* gener */;
+			targetProxy = 57FD61AD1F268BBE00554FD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57FD61A41F268BBE00554FD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57FD61A51F268BBE00554FD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57FD61B31F268BBE00554FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		57FD61B41F268BBE00554FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		57FD61B61F268BBE00554FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3DP67SJXSR;
+				INFOPLIST_FILE = gener/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnr.gener;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		57FD61B71F268BBE00554FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3DP67SJXSR;
+				INFOPLIST_FILE = gener/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnr.gener;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		57FD61B91F268BBE00554FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3DP67SJXSR;
+				INFOPLIST_FILE = generTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnr.generTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gener.app/Contents/MacOS/gener";
+			};
+			name = Debug;
+		};
+		57FD61BA1F268BBE00554FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3DP67SJXSR;
+				INFOPLIST_FILE = generTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gnr.generTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gener.app/Contents/MacOS/gener";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57FD61911F268BBD00554FD5 /* Build configuration list for PBXProject "gener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FD61B31F268BBE00554FD5 /* Debug */,
+				57FD61B41F268BBE00554FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57FD61B51F268BBE00554FD5 /* Build configuration list for PBXNativeTarget "gener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FD61B61F268BBE00554FD5 /* Debug */,
+				57FD61B71F268BBE00554FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57FD61B81F268BBE00554FD5 /* Build configuration list for PBXNativeTarget "generTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FD61B91F268BBE00554FD5 /* Debug */,
+				57FD61BA1F268BBE00554FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57FD618E1F268BBD00554FD5 /* Project object */;
+}

@@ -1,0 +1,29 @@
+//
+//  $moduleName$Presenter.m
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+#import "$moduleName$Presenter.h"
+
+#import "$moduleName$ViewOutput.h"
+#import "$moduleName$ViewInput.h"
+#import "$moduleName$ModuleRouting.h"
+
+@implementation $moduleName$Presenter
+
+#pragma mark - $moduleName$ViewOutput
+
+- (void)didTriggerViewReadyEvent {
+    [self.view setupInitialState];
+}
+
+#pragma mark - $moduleName$ModuleInput
+
+- (void)configureModule {
+
+}
+
+@end
