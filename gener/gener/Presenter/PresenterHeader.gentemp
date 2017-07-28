@@ -13,7 +13,7 @@
 @protocol $moduleName$ViewInput;
 @protocol $moduleName$ModuleRouting;
 
-@interface $moduleName$Presenter : NSObject <$moduleName$ModuleInput ,$moduleName$ViewOutput>
+@interface $moduleName$Presenter : NSObject <$moduleName$ModuleInput, $moduleName$ViewOutput>
 
 @property (weak, nonatomic) id<$moduleName$ViewInput> view;
 @property (weak, nonatomic) id<$moduleName$ModuleRouting> router;
