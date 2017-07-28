@@ -31,6 +31,7 @@
 		C787A68E1F2B6CC2008CEADB /* ModuleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6861F2B6CC2008CEADB /* ModuleSettings.m */; };
 		C787A68F1F2B6CC2008CEADB /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6881F2B6CC2008CEADB /* SourceFile.m */; };
 		C787A6901F2B6CC2008CEADB /* TemplateJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A68A1F2B6CC2008CEADB /* TemplateJSONParser.m */; };
+		C787A6931F2B6E31008CEADB /* NSDate+GenerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6921F2B6E31008CEADB /* NSDate+GenerDate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		C787A6881F2B6CC2008CEADB /* SourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceFile.m; sourceTree = "<group>"; };
 		C787A6891F2B6CC2008CEADB /* TemplateJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateJSONParser.h; sourceTree = "<group>"; };
 		C787A68A1F2B6CC2008CEADB /* TemplateJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateJSONParser.m; sourceTree = "<group>"; };
+		C787A6911F2B6E31008CEADB /* NSDate+GenerDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+GenerDate.h"; sourceTree = "<group>"; };
+		C787A6921F2B6E31008CEADB /* NSDate+GenerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GenerDate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 			children = (
 				C771A45B1F275BC400DA90C7 /* NSURL+GenerURL.h */,
 				C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */,
+				C787A6911F2B6E31008CEADB /* NSDate+GenerDate.h */,
+				C787A6921F2B6E31008CEADB /* NSDate+GenerDate.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				C787A68E1F2B6CC2008CEADB /* ModuleSettings.m in Sources */,
 				57FD61CA1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
 				C787A68C1F2B6CC2008CEADB /* FIleTemplate.m in Sources */,
+				C787A6931F2B6E31008CEADB /* NSDate+GenerDate.m in Sources */,
 				C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
 				57FD61C31F268DF200554FD5 /* GenerationViewController.m in Sources */,
 				C787A68D1F2B6CC2008CEADB /* Generator.m in Sources */,
