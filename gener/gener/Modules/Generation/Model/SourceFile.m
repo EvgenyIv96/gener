@@ -11,6 +11,8 @@
 #import "FIleTemplate.h"
 #import "ModuleSettings.h"
 
+#import "NSDate+GenerDate.h"
+
 @interface SourceFile ()
 
 @property (strong, nonatomic) FIleTemplate *template;
@@ -77,25 +79,14 @@
 - (NSString *)replacePlaceholdersInString:(NSString *)contentsString {
 
     NSString *resultString = [contentsString copy];
-
     NSDate *currentDate = [NSDate date];
-
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"dd.MM.yyyy"];
-
-    NSString *fullDateString = [dateFormatter stringFromDate:currentDate];
-
-    [dateFormatter setDateFormat:@"yyyy"];
-
-    NSString *yearString = [dateFormatter stringFromDate:currentDate];
-
 
     NSDictionary *dictionary = @{
             @"$moduleName$": self.settings.name,
             @"$projectName$": self.settings.project,
             @"$author$": self.settings.author,
-            @"$date$": fullDateString,
-            @"$year$": yearString,
+            @"$date$": [currentDate stringWithFormat:@"dd.MM.yyyy"],
+            @"$year$": [currentDate stringWithFormat:@"yyyy"],
             @"$company$": self.settings.company
     };
 
