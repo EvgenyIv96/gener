@@ -6,11 +6,10 @@
 //  Copyright © 2017 GNR. All rights reserved.
 //
 
-#import "GenerationPresenter.h"
 #import <Cocoa/Cocoa.h>
+#import "GenerationPresenter.h"
 
 #import "GenerationViewInput.h"
-
 #import "GenerationModuleRouting.h"
 
 #import "Generator.h"
