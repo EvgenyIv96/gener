@@ -1,0 +1,16 @@
+//
+//  $moduleName$ViewOutput.swift
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+import Foundation
+
+protocol $moduleName$ViewOutput {
+    
+    /// Method is used to tell presenter that view ready for work.
+    func didTriggerViewReadyEvent()
+    
+}

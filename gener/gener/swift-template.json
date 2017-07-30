@@ -1,0 +1,40 @@
+{
+    "templates": [
+      {
+        "name": "ViewInput",
+        "extension": ".swift",
+        "destination_path": "View",
+        "template_path": "Templates/swift/View/ModuleViewInput.gentemp"
+      },
+      {
+        "name": "ViewOutput",
+        "extension": ".swift",
+        "destination_path": "View",
+        "template_path": "Templates/swift/View/ModuleViewOutput.gentemp"
+      },
+      {
+        "name": "ModuleRouting",
+        "extension": ".swift",
+        "destination_path": "View",
+        "template_path": "Templates/swift/View/ModuleRouting.gentemp"
+      },
+      {
+        "name": "ViewController",
+        "extension": ".swift",
+        "destination_path": "View",
+        "template_path": "Templates/swift/View/ViewController.gentemp"
+      },
+      {
+        "name": "Presenter",
+        "extension": ".swift",
+        "destination_path": "Presenter",
+        "template_path": "Templates/swift/Presenter/ModulePresenter.gentemp"
+      },
+      {
+        "name": "ModuleAssembly",
+        "extension": ".swift",
+        "destination_path": "Assembly",
+        "template_path": "Templates/swift/Assembly/ModuleAssembly.gentemp"
+      }
+    ]
+}

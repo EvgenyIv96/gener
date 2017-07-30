@@ -1,0 +1,16 @@
+//
+//  $moduleName$ViewInput.swift
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+import Foundation
+
+protocol $moduleName$ViewInput {
+    
+    /// Method is used to set up view initial state.
+    func setupInitialState()
+    
+}

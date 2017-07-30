@@ -1,0 +1,42 @@
+//
+//  $moduleName$ViewController.swift
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+import UIKit
+
+class $moduleName$ViewController: UIViewController {
+    
+    var output: $moduleName$ViewOutput?
+    
+    // MARK: Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.output?.didTriggerViewReadyEvent()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+}
+
+// MARK: - $moduleName$ViewInput
+extension $moduleName$ViewController: $moduleName$ViewInput {
+    
+    func setupInitialState() {
+        $moduleName$Button.isEnabled = false
+    }
+    
+}
+
+// MARK: - $moduleName$ModuleRouting
+extension $moduleName$ViewController: $moduleName$ModuleRouting {
+    
+}

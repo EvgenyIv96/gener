@@ -1,0 +1,33 @@
+//
+//  $moduleName$Assembly.swift
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+import UIKit
+
+class $moduleName$Assembly {
+    
+    func build$moduleName$Module(_ completion: (UIViewController?) -> Void) {
+        
+        // Creating module components
+        let viewController = UIStoryboard(name: <#Storyboard Name#>, bundle: nil).instantiateViewController(withIdentifier: <#Identifier#>)
+        let presenter = $moduleName$Presenter()
+        
+        guard let moduleViewController = viewController as? $moduleName$ViewController else {
+            completion(nil)
+            return
+        }
+        
+        // Inject properties
+        moduleViewController.output = presenter
+        presenter.view = moduleViewController
+        presenter.router = moduleViewController
+        
+        completion(moduleViewController)
+        
+    }
+    
+}
