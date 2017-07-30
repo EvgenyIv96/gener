@@ -16,6 +16,8 @@
 @property (weak) IBOutlet NSTextField *pathTextField;
 @property (weak) IBOutlet NSButton *choosePathButton;
 
+@property (weak) IBOutlet NSSegmentedControl *languageSegmentedControl;
+
 @property (weak) IBOutlet NSTextField *moduleNameTextField;
 @property (weak) IBOutlet NSTextField *projectNameTextField;
 @property (weak) IBOutlet NSTextField *authorFullNameTextField;
@@ -41,11 +43,14 @@
 
 - (IBAction)generateButtonTapped:(NSButton *)sender {
 
+    Language language = (Language)self.languageSegmentedControl.selectedSegment;
+
     ModuleSettings *moduleSettings = [[ModuleSettings alloc] initWithPath:self.pathTextField.stringValue
                                                                      name:self.moduleNameTextField.stringValue
                                                                   project:self.projectNameTextField.stringValue
                                                                    author:self.authorFullNameTextField.stringValue
-                                                                  company:self.companyNameTextField.stringValue];
+                                                                  company:self.companyNameTextField.stringValue
+                                                                 language:language];
 
     [self.output didTriggerGenerateButtonTappedEventWithModuleSettings:moduleSettings];
 }
@@ -53,7 +58,7 @@
 #pragma mark - GenerationViewInput
 
 - (void)setupInitialState {
-    
+    self.languageSegmentedControl.selectedSegment = 0;
 }
 
 - (void)updateViewWithNewModulePathString:(NSString *)modulePathString {

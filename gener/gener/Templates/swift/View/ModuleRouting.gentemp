@@ -1,0 +1,13 @@
+//
+//  $moduleName$ModuleRouting.swift
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+import Foundation
+
+protocol $moduleName$ModuleRouting {
+    
+}

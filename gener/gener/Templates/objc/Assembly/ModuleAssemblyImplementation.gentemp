@@ -13,7 +13,7 @@
 
 @implementation $moduleName$ModuleAssembly
 
-- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$moduleName$ModuleInput> moduleInput,UIViewController *viewController))completion {
+- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$moduleName$ModuleInput> moduleInput, UIViewController *viewController))completion {
 
     //Creating module components
     $moduleName$ViewController *viewController = [[UIStoryboard storyboardWithName:@"<#$moduleName$ storyboard name#>" bundle:nil] instantiateViewControllerWithIdentifier:@"<#$moduleName$ view controller identifier #>"];

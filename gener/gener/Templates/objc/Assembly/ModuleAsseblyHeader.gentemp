@@ -13,6 +13,6 @@
 
 @interface $moduleName$ModuleAssembly : NSObject
 
-- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$moduleName$ModuleInput> moduleInput,UIViewController *viewController))completion;
+- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$moduleName$ModuleInput> moduleInput, UIViewController *viewController))completion;
 
 @end
