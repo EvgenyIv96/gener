@@ -12,7 +12,7 @@
 
 #pragma mark - Initializer
 
-- (instancetype)initWithPath:(NSString *)path name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company {
+- (instancetype)initWithPath:(NSString *)path name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company language:(Language)language {
     self = [super init];
     if (self) {
         _path = path;
@@ -20,6 +20,7 @@
         _project = project;
         _author = author;
         _company = company;
+        _language = language;
     }
 
     return self;
@@ -27,8 +28,8 @@
 
 #pragma mark - Factory method
 
-+ (instancetype)settingsWithPath:(NSString *)path name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company {
-    return [[self alloc] initWithPath:path name:name project:project author:author company:company];
++ (instancetype)settingsWithPath:(NSString *)path name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company language:(Language)language {
+    return [[self alloc] initWithPath:path name:name project:project author:author company:company language:language];
 }
 
 
