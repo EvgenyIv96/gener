@@ -22,7 +22,7 @@
         "name": "ViewController",
         "extension": ".swift",
         "destination_path": "View",
-        "template_path": "Templates/swift/View/ViewController.gentemp"
+        "template_path": "Templates/swift/View/ModuleViewController.gentemp"
       },
       {
         "name": "Presenter",

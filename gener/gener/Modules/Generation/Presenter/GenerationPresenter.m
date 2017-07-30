@@ -60,7 +60,7 @@
             pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
             break;
         case LanguageSwift:
-            pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
+            pathString = [[NSBundle mainBundle] pathForResource:@"swift-template" ofType:@"json"];
             break;
     }
 
