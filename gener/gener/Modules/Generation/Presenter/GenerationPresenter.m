@@ -15,6 +15,7 @@
 #import "Generator.h"
 
 #import "NSURL+GenerURL.h"
+#import "ModuleSettings.h"
 
 @interface GenerationPresenter ()
 
@@ -29,12 +30,6 @@
 - (void)didTriggerViewReadyEvent {
     
     self.generator = [[Generator alloc] init];
-    
-    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
-    
-    NSError *generatorSetupError;
-    
-    [self.generator setupWithTemplatePath:[NSURL URLWithString:pathString] error:&generatorSetupError];
     
     [self.view setupInitialState];
 }
@@ -57,6 +52,20 @@
 }
 
 - (void)didTriggerGenerateButtonTappedEventWithModuleSettings:(ModuleSettings *)settings {
+
+    NSString *pathString;
+
+    switch (settings.language) {
+        case LanguageObjectiveC:
+            pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
+            break;
+        case LanguageSwift:
+            pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
+            break;
+    }
+
+    NSError *generatorSetupError;
+    [self.generator setupWithTemplatePath:[NSURL URLWithString:pathString] error:&generatorSetupError];
 
     [self.generator setupWithModuleSettings:settings];
     
