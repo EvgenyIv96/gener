@@ -4,13 +4,13 @@
         "name": "ViewInput",
         "extension": ".swift",
         "destination_path": "View",
-        "template_path": "Templates/swift/View/ModuleViewInput.gentemp"
+        "template_path": "Templates/swift/View/ViewInput.gentemp"
       },
       {
         "name": "ViewOutput",
         "extension": ".swift",
         "destination_path": "View",
-        "template_path": "Templates/swift/View/ModuleViewOutput.gentemp"
+        "template_path": "Templates/swift/View/ViewOutput.gentemp"
       },
       {
         "name": "ModuleRouting",
@@ -22,13 +22,19 @@
         "name": "ViewController",
         "extension": ".swift",
         "destination_path": "View",
-        "template_path": "Templates/swift/View/ModuleViewController.gentemp"
+        "template_path": "Templates/swift/View/ViewController.gentemp"
+      },
+      {
+      "name": "ModuleInput",
+      "extension": ".swift",
+      "destination_path": "Presenter",
+      "template_path": "Templates/swift/Presenter/ModuleInput.gentemp"
       },
       {
         "name": "Presenter",
         "extension": ".swift",
         "destination_path": "Presenter",
-        "template_path": "Templates/swift/Presenter/ModulePresenter.gentemp"
+        "template_path": "Templates/swift/Presenter/Presenter.gentemp"
       },
       {
         "name": "ModuleAssembly",

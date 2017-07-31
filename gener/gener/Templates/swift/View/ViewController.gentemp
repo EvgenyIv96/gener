@@ -10,14 +10,15 @@ import UIKit
 
 class $moduleName$ViewController: UIViewController {
     
-    var output: $moduleName$ViewOutput?
+    var output: $moduleName$ViewOutput!
     
     // MARK: Life Cycle
-    
     override func viewDidLoad() {
+
         super.viewDidLoad()
 
-        self.output?.didTriggerViewReadyEvent()
+        self.output.didTriggerViewReadyEvent()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +32,7 @@ class $moduleName$ViewController: UIViewController {
 extension $moduleName$ViewController: $moduleName$ViewInput {
     
     func setupInitialState() {
-        $moduleName$Button.isEnabled = false
+
     }
     
 }
