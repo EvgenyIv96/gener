@@ -10,9 +10,9 @@ import Foundation
 
 class $moduleName$Presenter {
     
-    var view: $moduleName$ViewInput?
+    var view: $moduleName$ViewInput!
     
-    var router: $moduleName$ModuleRouting?
+    var router: $moduleName$ModuleRouting!
 
 }
 
@@ -21,7 +21,17 @@ extension $moduleName$Presenter: $moduleName$ViewOutput {
     
     func didTriggerViewReadyEvent() {
         
-        self.view?.setupInitialState()
+        self.view.setupInitialState()
+
     }
     
+}
+
+// MARK: - $moduleName$ModuleInput
+extension $moduleName$Presenter: $moduleName$ModuleInput {
+
+    func configureModule() {
+
+    }
+
 }

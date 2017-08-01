@@ -8,16 +8,16 @@
 
 import UIKit
 
-class $moduleName$Assembly {
+class $moduleName$ModuleAssembly {
     
-    func build$moduleName$Module(_ completion: (UIViewController?) -> Void) {
+    func build$moduleName$Module(_ completion: (UIViewController?, $moduleName$ModuleInput?) -> Void) {
         
         // Creating module components
         let viewController = UIStoryboard(name: <#Storyboard Name#>, bundle: nil).instantiateViewController(withIdentifier: <#Identifier#>)
         let presenter = $moduleName$Presenter()
         
         guard let moduleViewController = viewController as? $moduleName$ViewController else {
-            completion(nil)
+            completion(nil, nil)
             return
         }
         
@@ -26,7 +26,7 @@ class $moduleName$Assembly {
         presenter.view = moduleViewController
         presenter.router = moduleViewController
         
-        completion(moduleViewController)
+        completion(moduleViewController, presenter)
         
     }
     
