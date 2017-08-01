@@ -21,7 +21,7 @@ extension $moduleName$Presenter: $moduleName$ViewOutput {
     
     func didTriggerViewReadyEvent() {
         
-        self.view.setupInitialState()
+        view.setupInitialState()
 
     }
     
