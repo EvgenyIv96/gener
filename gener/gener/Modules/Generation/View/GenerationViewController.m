@@ -65,6 +65,11 @@
     [self.pathTextField setStringValue:modulePathString];
 }
 
+- (void)updateViewWithAuthorNameString:(NSString *)authorNameString {
+    [self.authorFullNameTextField setStringValue:authorNameString];
+}
+
+
 #pragma mark - Routing 
 
 - (void)openChooseDirectoryOpenPanelWithCompletion:(void (^) (NSOpenPanel *openPanel, NSInteger result))completion {
