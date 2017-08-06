@@ -51,11 +51,11 @@
     NSString *fileContentsString = [[NSString alloc] initWithData:contentsOfFileData encoding:NSUTF8StringEncoding];
 
     self.fileContent = [self replacePlaceholdersInString:fileContentsString];
-
-    NSURL * destinationUrl = [NSURL URLWithString:self.settings.path];
-    destinationUrl = [destinationUrl URLByAppendingPathComponent:self.template.destinationPath.absoluteString];
-
-    self.destinationFullPath = destinationUrl.absoluteString;
+    
+    NSURL *fileURL = [NSURL URLWithString:self.settings.path];
+    
+    self.destinationFullPath = fileURL.path;
+    
 }
 
 - (NSString *)content {
