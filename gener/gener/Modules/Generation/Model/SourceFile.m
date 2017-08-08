@@ -8,14 +8,14 @@
 
 #import "SourceFile.h"
 
-#import "FIleTemplate.h"
+#import "TemplateFileMeta.h"
 #import "ModuleSettings.h"
 
 #import "NSDate+GenerDate.h"
 
 @interface SourceFile ()
 
-@property (strong, nonatomic) FIleTemplate *template;
+@property (strong, nonatomic) TemplateFileMeta *template;
 @property (strong, nonatomic) ModuleSettings *settings;
 
 @property (strong, nonatomic) NSString *fileContent;
@@ -27,7 +27,7 @@
 
 #pragma mark - Initializer
 
-- (instancetype)initWithFileTemplate:(FIleTemplate *)fileTemplate settings:(ModuleSettings *)settings {
+- (instancetype)initWithFileTemplate:(TemplateFileMeta *)fileTemplate settings:(ModuleSettings *)settings {
     self = [super init];
     if (self) {
         _template = fileTemplate;
@@ -39,7 +39,7 @@
 
 #pragma mark - Factory method
 
-+ (instancetype)fileWithFileTemplate:(FIleTemplate *)fileTemplate settings:(ModuleSettings *)settings {
++ (instancetype)fileWithFileTemplate:(TemplateFileMeta *)fileTemplate settings:(ModuleSettings *)settings {
     return [[self alloc] initWithFileTemplate:fileTemplate settings:settings];
 }
 
@@ -66,7 +66,7 @@
     return self.destinationFullPath;
 }
 
-- (NSString *)extention {
+- (NSString *)extension {
     return self.template.extension;
 }
 

@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@class FIleTemplate;
+@class TemplateFileMeta;
 
 @interface TemplateJSONParser : NSObject
 
 - (void)setupWithPath:(NSURL *)path error:(NSError **)error;
 
-- (NSArray<FIleTemplate *> *)parse;
+- (NSArray<TemplateFileMeta *> *)parse;
 
 @end

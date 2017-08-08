@@ -7,7 +7,7 @@
 //
 
 #import "TemplateJSONParser.h"
-#import "FIleTemplate.h"
+#import "TemplateFileMeta.h"
 
 @interface TemplateJSONParser ()
 
@@ -35,12 +35,12 @@
     
 }
 
-- (NSArray<FIleTemplate *> *)parse {
+- (NSArray<TemplateFileMeta *> *)parse {
     
     NSMutableArray *parsed = [[NSMutableArray alloc] init];
     
     for (NSDictionary *json in self.jsonArray) {
-        FIleTemplate *template = [[FIleTemplate alloc] initWithJSON:json];
+        TemplateFileMeta *template = [[TemplateFileMeta alloc] initWithJSON:json];
         [parsed addObject:template];
     }
     

@@ -25,7 +25,7 @@
 		C771A47A1F27852700DA90C7 /* testTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = C771A4791F27852700DA90C7 /* testTemplate.txt */; };
 		C771A47B1F27852700DA90C7 /* testTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = C771A4791F27852700DA90C7 /* testTemplate.txt */; };
 		C787A68B1F2B6CC2008CEADB /* FileCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6801F2B6CC2008CEADB /* FileCreator.m */; };
-		C787A68C1F2B6CC2008CEADB /* FIleTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6821F2B6CC2008CEADB /* FIleTemplate.m */; };
+		C787A68C1F2B6CC2008CEADB /* TemplateFileMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6821F2B6CC2008CEADB /* TemplateFileMeta.m */; };
 		C787A68D1F2B6CC2008CEADB /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6841F2B6CC2008CEADB /* Generator.m */; };
 		C787A68E1F2B6CC2008CEADB /* ModuleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6861F2B6CC2008CEADB /* ModuleSettings.m */; };
 		C787A68F1F2B6CC2008CEADB /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6881F2B6CC2008CEADB /* SourceFile.m */; };
@@ -71,8 +71,8 @@
 		C771A4791F27852700DA90C7 /* testTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testTemplate.txt; sourceTree = "<group>"; };
 		C787A67F1F2B6CC2008CEADB /* FileCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCreator.h; sourceTree = "<group>"; };
 		C787A6801F2B6CC2008CEADB /* FileCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCreator.m; sourceTree = "<group>"; };
-		C787A6811F2B6CC2008CEADB /* FIleTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIleTemplate.h; sourceTree = "<group>"; };
-		C787A6821F2B6CC2008CEADB /* FIleTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIleTemplate.m; sourceTree = "<group>"; };
+		C787A6811F2B6CC2008CEADB /* TemplateFileMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFileMeta.h; sourceTree = "<group>"; };
+		C787A6821F2B6CC2008CEADB /* TemplateFileMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateFileMeta.m; sourceTree = "<group>"; };
 		C787A6831F2B6CC2008CEADB /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
 		C787A6841F2B6CC2008CEADB /* Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Generator.m; sourceTree = "<group>"; };
 		C787A6851F2B6CC2008CEADB /* ModuleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleSettings.h; sourceTree = "<group>"; };
@@ -230,8 +230,8 @@
 			children = (
 				C787A67F1F2B6CC2008CEADB /* FileCreator.h */,
 				C787A6801F2B6CC2008CEADB /* FileCreator.m */,
-				C787A6811F2B6CC2008CEADB /* FIleTemplate.h */,
-				C787A6821F2B6CC2008CEADB /* FIleTemplate.m */,
+				C787A6811F2B6CC2008CEADB /* TemplateFileMeta.h */,
+				C787A6821F2B6CC2008CEADB /* TemplateFileMeta.m */,
 				C787A6831F2B6CC2008CEADB /* Generator.h */,
 				C787A6841F2B6CC2008CEADB /* Generator.m */,
 				C787A6851F2B6CC2008CEADB /* ModuleSettings.h */,
@@ -360,7 +360,7 @@
 				57FD619B1F268BBE00554FD5 /* AppDelegate.m in Sources */,
 				C787A68E1F2B6CC2008CEADB /* ModuleSettings.m in Sources */,
 				57FD61CA1F268E4800554FD5 /* GenerationModuleAssembly.m in Sources */,
-				C787A68C1F2B6CC2008CEADB /* FIleTemplate.m in Sources */,
+				C787A68C1F2B6CC2008CEADB /* TemplateFileMeta.m in Sources */,
 				C787A6931F2B6E31008CEADB /* NSDate+GenerDate.m in Sources */,
 				C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
 				57FD61C31F268DF200554FD5 /* GenerationViewController.m in Sources */,

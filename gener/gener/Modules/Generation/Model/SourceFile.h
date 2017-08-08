@@ -8,12 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@class FIleTemplate;
+@class TemplateFileMeta;
 @class ModuleSettings;
 
 @interface SourceFile : NSObject
 
-- (instancetype)initWithFileTemplate:(FIleTemplate *)fileTemplate settings:(ModuleSettings *)settings;
+- (instancetype)initWithFileTemplate:(TemplateFileMeta *)fileTemplate settings:(ModuleSettings *)settings;
+
++ (instancetype)fileWithFileTemplate:(TemplateFileMeta *)fileTemplate settings:(ModuleSettings *)settings;
 
 - (void)configure;
 
@@ -21,10 +23,8 @@
 
 - (NSString *)destinationPath;
 
-- (NSString *)extention;
+- (NSString *)extension;
 
 - (NSString *)name;
-
-+ (instancetype)fileWithFileTemplate:(FIleTemplate *)fileTemplate settings:(ModuleSettings *)settings;
 
 @end
