@@ -1,19 +1,19 @@
 //
-//  $moduleName$ViewController.m
+//  $prefix$$moduleName$ViewController.m
 //  $projectName$
 //
 //  Created by $author$ on $date$.
 //  Copyright © $year$ $company$. All rights reserved.
 //
 
-#import "$moduleName$ViewController.h"
-#import "$moduleName$ViewOutput.h"
+#import "$prefix$$moduleName$ViewController.h"
+#import "$prefix$$moduleName$ViewOutput.h"
 
-@interface $moduleName$ViewController ()
+@interface $prefix$$moduleName$ViewController ()
 
 @end
 
-@implementation $moduleName$ViewController
+@implementation $prefix$$moduleName$ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,12 +32,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - $moduleName$ViewInput
+#pragma mark - $prefix$$moduleName$ViewInput
 
 - (void)setupInitialState {
 
 }
 
-#pragma mark - $moduleName$ModuleRouting
+#pragma mark - $prefix$$moduleName$ModuleRouting
 
 @end

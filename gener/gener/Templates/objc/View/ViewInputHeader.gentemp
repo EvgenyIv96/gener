@@ -1,5 +1,5 @@
 //
-//  $moduleName$ViewInput.h
+//  $prefix$$moduleName$ViewInput.h
 //  $projectName$
 //
 //  Created by $author$ on $date$.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol $moduleName$ViewInput <NSObject>
+@protocol $prefix$$moduleName$ViewInput <NSObject>
 
 /**
  

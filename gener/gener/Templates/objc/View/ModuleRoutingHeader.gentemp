@@ -1,5 +1,5 @@
 //
-//  $moduleName$ModuleRouting.h
+//  $prefix$$moduleName$ModuleRouting.h
 //  $projectName$
 //
 //  Created by $author$ on $date$.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol $moduleName$ModuleRouting <NSObject>
+@protocol $prefix$$moduleName$ModuleRouting <NSObject>
 
 @end
