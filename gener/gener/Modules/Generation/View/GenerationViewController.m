@@ -46,12 +46,13 @@
 
     Language language = (Language)self.languageSegmentedControl.selectedSegment;
 
-    ModuleSettings *moduleSettings = [[ModuleSettings alloc] initWithPath:self.pathTextField.stringValue
-                                                                     name:self.moduleNameTextField.stringValue
-                                                                  project:self.projectNameTextField.stringValue
-                                                                   author:self.authorFullNameTextField.stringValue
-                                                                  company:self.companyNameTextField.stringValue
-                                                                 language:language];
+    ModuleSettings *moduleSettings = [ModuleSettings settingsWithPath:self.pathTextField.stringValue
+                                                          classPrefix:self.classPrefixTextField.stringValue
+                                                                 name:self.moduleNameTextField.stringValue
+                                                              project:self.projectNameTextField.stringValue
+                                                               author:self.authorFullNameTextField.stringValue
+                                                              company:self.companyNameTextField.stringValue
+                                                             language:language];
 
     [self.output didTriggerGenerateButtonTappedEventWithModuleSettings:moduleSettings];
 }

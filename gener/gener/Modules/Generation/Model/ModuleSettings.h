@@ -16,15 +16,16 @@ typedef NS_ENUM(NSInteger, Language) {
 @interface ModuleSettings : NSObject
 
 @property (strong, nonatomic) NSString *path;
+@property (strong, nonatomic) NSString *classPrefix;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *project;
 @property (strong, nonatomic) NSString *author;
 @property (strong, nonatomic) NSString *company;
 @property (assign, nonatomic) Language language;
 
-- (instancetype)initWithPath:(NSString *)path name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company language:(Language)language;
+- (instancetype)initWithPath:(NSString *)path classPrefix:(NSString *)prefix name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company language:(Language)language;
 
-+ (instancetype)settingsWithPath:(NSString *)path name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company language:(Language)language;
++ (instancetype)settingsWithPath:(NSString *)path classPrefix:(NSString *)prefix name:(NSString *)name project:(NSString *)project author:(NSString *)author company:(NSString *)company language:(Language)language;
 
 
 @end

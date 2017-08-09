@@ -71,7 +71,7 @@
 }
 
 - (NSString *)name {
-    return [NSString stringWithFormat:@"%@%@", self.settings.name, self.template.nameTemplate];
+    return [NSString stringWithFormat:@"%@%@%@", self.settings.classPrefix, self.settings.name, self.template.nameTemplate];
 }
 
 #pragma mark - Private
@@ -83,6 +83,7 @@
 
     NSDictionary *dictionary = @{
             @"$moduleName$": self.settings.name,
+            @"$prefix$": self.settings.classPrefix,
             @"$projectName$": self.settings.project,
             @"$author$": self.settings.author,
             @"$date$": [currentDate stringWithFormat:@"dd.MM.yyyy"],
