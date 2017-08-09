@@ -18,6 +18,7 @@
 
 @property (weak) IBOutlet NSSegmentedControl *languageSegmentedControl;
 
+@property (weak) IBOutlet NSTextField *classPrefixTextField;
 @property (weak) IBOutlet NSTextField *moduleNameTextField;
 @property (weak) IBOutlet NSTextField *projectNameTextField;
 @property (weak) IBOutlet NSTextField *authorFullNameTextField;
