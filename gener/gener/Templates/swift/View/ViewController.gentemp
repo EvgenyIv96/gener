@@ -17,7 +17,7 @@ class $moduleName$ViewController: UIViewController {
 
         super.viewDidLoad()
 
-        self.output.didTriggerViewReadyEvent()
+        output.didTriggerViewReadyEvent()
 
     }
 

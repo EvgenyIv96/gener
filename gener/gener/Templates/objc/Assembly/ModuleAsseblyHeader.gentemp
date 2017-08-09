@@ -1,5 +1,5 @@
 //
-//  $moduleName$ModuleAssembly.h
+//  $prefix$$moduleName$ModuleAssembly.h
 //  $projectName$
 //
 //  Created by $author$ on $date$.
@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @class UIViewController;
-@protocol $moduleName$ModuleInput;
+@protocol $prefix$$moduleName$ModuleInput;
 
-@interface $moduleName$ModuleAssembly : NSObject
+@interface $prefix$$moduleName$ModuleAssembly : NSObject
 
-- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$moduleName$ModuleInput> moduleInput, UIViewController *viewController))completion;
+- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$prefix$$moduleName$ModuleInput> moduleInput, UIViewController *viewController))completion;
 
 @end

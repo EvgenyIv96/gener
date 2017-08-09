@@ -8,14 +8,14 @@
 
 #import "SourceFile.h"
 
-#import "FIleTemplate.h"
+#import "TemplateFileMeta.h"
 #import "ModuleSettings.h"
 
 #import "NSDate+GenerDate.h"
 
 @interface SourceFile ()
 
-@property (strong, nonatomic) FIleTemplate *template;
+@property (strong, nonatomic) TemplateFileMeta *template;
 @property (strong, nonatomic) ModuleSettings *settings;
 
 @property (strong, nonatomic) NSString *fileContent;
@@ -27,7 +27,7 @@
 
 #pragma mark - Initializer
 
-- (instancetype)initWithFileTemplate:(FIleTemplate *)fileTemplate settings:(ModuleSettings *)settings {
+- (instancetype)initWithFileTemplate:(TemplateFileMeta *)fileTemplate settings:(ModuleSettings *)settings {
     self = [super init];
     if (self) {
         _template = fileTemplate;
@@ -39,7 +39,7 @@
 
 #pragma mark - Factory method
 
-+ (instancetype)fileWithFileTemplate:(FIleTemplate *)fileTemplate settings:(ModuleSettings *)settings {
++ (instancetype)fileWithFileTemplate:(TemplateFileMeta *)fileTemplate settings:(ModuleSettings *)settings {
     return [[self alloc] initWithFileTemplate:fileTemplate settings:settings];
 }
 
@@ -51,11 +51,11 @@
     NSString *fileContentsString = [[NSString alloc] initWithData:contentsOfFileData encoding:NSUTF8StringEncoding];
 
     self.fileContent = [self replacePlaceholdersInString:fileContentsString];
-
-    NSURL * destinationUrl = [NSURL URLWithString:self.settings.path];
-    destinationUrl = [destinationUrl URLByAppendingPathComponent:self.template.destinationPath.absoluteString];
-
-    self.destinationFullPath = destinationUrl.absoluteString;
+    
+    NSURL *fileURL = [NSURL URLWithString:self.settings.path];
+    
+    self.destinationFullPath = fileURL.path;
+    
 }
 
 - (NSString *)content {
@@ -66,12 +66,12 @@
     return self.destinationFullPath;
 }
 
-- (NSString *)extention {
+- (NSString *)extension {
     return self.template.extension;
 }
 
 - (NSString *)name {
-    return [NSString stringWithFormat:@"%@%@", self.settings.name, self.template.nameTemplate];
+    return [NSString stringWithFormat:@"%@%@%@", self.settings.classPrefix, self.settings.name, self.template.nameTemplate];
 }
 
 #pragma mark - Private
@@ -83,6 +83,7 @@
 
     NSDictionary *dictionary = @{
             @"$moduleName$": self.settings.name,
+            @"$prefix$": self.settings.classPrefix,
             @"$projectName$": self.settings.project,
             @"$author$": self.settings.author,
             @"$date$": [currentDate stringWithFormat:@"dd.MM.yyyy"],

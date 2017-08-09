@@ -1,5 +1,5 @@
 //
-//  $moduleName$Presenter.h
+//  $prefix$$moduleName$Presenter.h
 //  $projectName$
 //
 //  Created by $author$ on $date$.
@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "$moduleName$ViewOutput.h"
-#import "$moduleName$ModuleInput.h"
+#import "$prefix$$moduleName$ViewOutput.h"
+#import "$prefix$$moduleName$ModuleInput.h"
 
-@protocol $moduleName$ViewInput;
-@protocol $moduleName$ModuleRouting;
+@protocol $prefix$$moduleName$ViewInput;
+@protocol $prefix$$moduleName$ModuleRouting;
 
-@interface $moduleName$Presenter : NSObject <$moduleName$ModuleInput, $moduleName$ViewOutput>
+@interface $prefix$$moduleName$Presenter : NSObject <$prefix$$moduleName$ModuleInput, $prefix$$moduleName$ViewOutput>
 
-@property (weak, nonatomic) id<$moduleName$ViewInput> view;
-@property (weak, nonatomic) id<$moduleName$ModuleRouting> router;
+@property (weak, nonatomic) id<$prefix$$moduleName$ViewInput> view;
+@property (weak, nonatomic) id<$prefix$$moduleName$ModuleRouting> router;
 
 @end

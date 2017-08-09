@@ -32,6 +32,11 @@
     self.generator = [[Generator alloc] init];
     
     [self.view setupInitialState];
+    
+    NSString *fullUserName = [self fullUserNameInSystem];
+    
+    [self.view updateViewWithAuthorNameString:fullUserName];
+    
 }
 
 - (void)didTriggerChooseButtonTappedEvent {
@@ -75,5 +80,10 @@
 
 #pragma mark - Private Methods
 
+- (NSString *)fullUserNameInSystem {
+    
+    return NSFullUserName();
+    
+}
 
 @end

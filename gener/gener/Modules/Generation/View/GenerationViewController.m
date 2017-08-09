@@ -18,6 +18,7 @@
 
 @property (weak) IBOutlet NSSegmentedControl *languageSegmentedControl;
 
+@property (weak) IBOutlet NSTextField *classPrefixTextField;
 @property (weak) IBOutlet NSTextField *moduleNameTextField;
 @property (weak) IBOutlet NSTextField *projectNameTextField;
 @property (weak) IBOutlet NSTextField *authorFullNameTextField;
@@ -45,12 +46,13 @@
 
     Language language = (Language)self.languageSegmentedControl.selectedSegment;
 
-    ModuleSettings *moduleSettings = [[ModuleSettings alloc] initWithPath:self.pathTextField.stringValue
-                                                                     name:self.moduleNameTextField.stringValue
-                                                                  project:self.projectNameTextField.stringValue
-                                                                   author:self.authorFullNameTextField.stringValue
-                                                                  company:self.companyNameTextField.stringValue
-                                                                 language:language];
+    ModuleSettings *moduleSettings = [ModuleSettings settingsWithPath:self.pathTextField.stringValue
+                                                          classPrefix:self.classPrefixTextField.stringValue
+                                                                 name:self.moduleNameTextField.stringValue
+                                                              project:self.projectNameTextField.stringValue
+                                                               author:self.authorFullNameTextField.stringValue
+                                                              company:self.companyNameTextField.stringValue
+                                                             language:language];
 
     [self.output didTriggerGenerateButtonTappedEventWithModuleSettings:moduleSettings];
 }
@@ -64,6 +66,11 @@
 - (void)updateViewWithNewModulePathString:(NSString *)modulePathString {
     [self.pathTextField setStringValue:modulePathString];
 }
+
+- (void)updateViewWithAuthorNameString:(NSString *)authorNameString {
+    [self.authorFullNameTextField setStringValue:authorNameString];
+}
+
 
 #pragma mark - Routing 
 

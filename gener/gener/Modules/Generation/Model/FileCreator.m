@@ -47,7 +47,7 @@
         [self.fileManager createDirectoryAtPath:[file destinationPath] withIntermediateDirectories:YES attributes:nil error:&folderCreationError];
     }
 
-    NSString *filePath = [NSString stringWithFormat:@"%@/%@%@", [file destinationPath], [file name], [file extention]];
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@%@", [file destinationPath], [file name], [file extension]];
     NSString *fileContent = [file content];
     NSData *content = [fileContent dataUsingEncoding:NSUTF8StringEncoding];
 

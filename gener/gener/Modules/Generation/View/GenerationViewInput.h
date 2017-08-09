@@ -24,4 +24,12 @@
  */
 - (void)updateViewWithNewModulePathString:(NSString *)modulePathString;
 
+
+/**
+ Method is used to update view with full author name.
+
+ @param authorNameString NSString full author name string.
+ */
+- (void)updateViewWithAuthorNameString:(NSString *)authorNameString;
+
 @end

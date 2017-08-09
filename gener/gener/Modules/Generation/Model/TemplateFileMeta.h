@@ -1,5 +1,5 @@
 //
-//  FIleTemplate.h
+//  TemplateFileMeta.h
 //  gener
 //
 //  Created by Privezentsev Yury on 25.07.17.
@@ -19,7 +19,7 @@
     }
  
  */
-@interface FIleTemplate : NSObject
+@interface TemplateFileMeta : NSObject
 
 @property (strong, nonatomic) NSString *nameTemplate;
 @property (strong, nonatomic) NSString *extension;

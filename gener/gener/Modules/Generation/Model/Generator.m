@@ -8,7 +8,7 @@
 
 #import "Generator.h"
 
-#import "FIleTemplate.h"
+#import "TemplateFileMeta.h"
 #import "TemplateJSONParser.h"
 #import "FileCreator.h"
 #import "SourceFile.h"
@@ -16,7 +16,7 @@
 
 @interface Generator ()
 
-@property (copy, nonatomic) NSArray<FIleTemplate *> *fileTemplates;
+@property (copy, nonatomic) NSArray<TemplateFileMeta *> *fileTemplates;
 @property (copy, nonatomic) NSArray<SourceFile *> *sourceFiles;
 @property (strong, nonatomic) TemplateJSONParser *parser;
 @property (strong, nonatomic) FileCreator *fileCreator;
@@ -57,8 +57,8 @@
     
     NSMutableArray *sourceFiles = [[NSMutableArray alloc] init];
     
-    for (FIleTemplate *template in self.fileTemplates) {
-        SourceFile *file = [[SourceFile alloc] initWithFileTemplate:template settings:settings];
+    for (TemplateFileMeta *template in self.fileTemplates) {
+        SourceFile *file = [SourceFile fileWithFileTemplate:template settings:settings];
         [file configure];
         [sourceFiles addObject:file];
     }

@@ -1,24 +1,24 @@
 //
-//  $moduleName$ModuleAssembly.m
+//  $prefix$$moduleName$ModuleAssembly.m
 //  $projectName$
 //
 //  Created by $author$ on $date$.
 //  Copyright © $year$ $company$. All rights reserved.
 //
 
-#import "$moduleName$ModuleAssembly.h"
+#import "$prefix$$moduleName$ModuleAssembly.h"
 
-#import "$moduleName$ViewController.h"
-#import "$moduleName$Presenter.h"
+#import "$prefix$$moduleName$ViewController.h"
+#import "$prefix$$moduleName$Presenter.h"
 
-@implementation $moduleName$ModuleAssembly
+@implementation $prefix$$moduleName$ModuleAssembly
 
-- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$moduleName$ModuleInput> moduleInput, UIViewController *viewController))completion {
+- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$prefix$$moduleName$ModuleInput> moduleInput, UIViewController *viewController))completion {
 
     //Creating module components
-    $moduleName$ViewController *viewController = [[UIStoryboard storyboardWithName:@"<#$moduleName$ storyboard name#>" bundle:nil] instantiateViewControllerWithIdentifier:@"<#$moduleName$ view controller identifier #>"];
+    $prefix$$moduleName$ViewController *viewController = [[UIStoryboard storyboardWithName:@"<#$moduleName$ storyboard name#>" bundle:nil] instantiateViewControllerWithIdentifier:@"<#$moduleName$ view controller identifier #>"];
 
-    $moduleName$Presenter *presenter = [[$moduleName$Presenter alloc] init];
+    $prefix$$moduleName$Presenter *presenter = [[$prefix$$moduleName$Presenter alloc] init];
 
     //Injecting properties
     viewController.output = presenter;
