@@ -53,6 +53,7 @@
     self.fileContent = [self replacePlaceholdersInString:fileContentsString];
     
     NSURL *fileURL = [NSURL URLWithString:self.settings.path];
+    fileURL = [fileURL URLByAppendingPathComponent:self.template.destinationPath.path];
     
     self.destinationFullPath = fileURL.path;
     
