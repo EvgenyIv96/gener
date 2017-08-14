@@ -22,6 +22,10 @@
         
         self.window = [NSWindow windowWithContentViewController:viewController];
         
+        CGSize contentSize = CGSizeMake(480.f, 445.f);
+        self.window.contentMaxSize = contentSize;
+        self.window.contentMinSize = contentSize;
+        
         [self.window makeKeyAndOrderFront:NSApp];
         
     }];
