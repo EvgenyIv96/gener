@@ -31,6 +31,7 @@
 		C787A68F1F2B6CC2008CEADB /* SourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6881F2B6CC2008CEADB /* SourceFile.m */; };
 		C787A6901F2B6CC2008CEADB /* TemplateJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A68A1F2B6CC2008CEADB /* TemplateJSONParser.m */; };
 		C787A6931F2B6E31008CEADB /* NSDate+GenerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6921F2B6E31008CEADB /* NSDate+GenerDate.m */; };
+		EEAF6374205EED270046F135 /* NSFileManager+GenerFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEAF6373205EED270046F135 /* NSFileManager+GenerFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		C787A68A1F2B6CC2008CEADB /* TemplateJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateJSONParser.m; sourceTree = "<group>"; };
 		C787A6911F2B6E31008CEADB /* NSDate+GenerDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+GenerDate.h"; sourceTree = "<group>"; };
 		C787A6921F2B6E31008CEADB /* NSDate+GenerDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+GenerDate.m"; sourceTree = "<group>"; };
+		EEAF6372205EED270046F135 /* NSFileManager+GenerFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+GenerFileManager.h"; sourceTree = "<group>"; };
+		EEAF6373205EED270046F135 /* NSFileManager+GenerFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+GenerFileManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,8 @@
 				C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */,
 				C787A6911F2B6E31008CEADB /* NSDate+GenerDate.h */,
 				C787A6921F2B6E31008CEADB /* NSDate+GenerDate.m */,
+				EEAF6372205EED270046F135 /* NSFileManager+GenerFileManager.h */,
+				EEAF6373205EED270046F135 /* NSFileManager+GenerFileManager.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				C787A6931F2B6E31008CEADB /* NSDate+GenerDate.m in Sources */,
 				C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */,
 				57FD61C31F268DF200554FD5 /* GenerationViewController.m in Sources */,
+				EEAF6374205EED270046F135 /* NSFileManager+GenerFileManager.m in Sources */,
 				C787A68D1F2B6CC2008CEADB /* Generator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

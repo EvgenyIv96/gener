@@ -23,6 +23,11 @@
 - (void)didTriggerChooseButtonTappedEvent;
 
 /**
+ Method is used to tell presenter that template choose button was tapped.
+ */
+- (void)didTriggerTemplateChooseButtonTappedEvent;
+
+/**
  Method is used to tell presenter that generate button was tapped.
  
  @parameter settings ModuleSettings settings of module that will be generated.

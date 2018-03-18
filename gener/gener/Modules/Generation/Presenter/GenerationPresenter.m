@@ -16,10 +16,13 @@
 
 #import "NSURL+GenerURL.h"
 #import "ModuleSettings.h"
+#import "NSFileManager+GenerFileManager.h"
+
 
 @interface GenerationPresenter ()
 
 @property (strong, nonatomic) NSURL *mainPathURL;
+@property (strong, nonatomic) NSURL *templatePathURL;
 
 @end
 
@@ -56,18 +59,26 @@
     
 }
 
+- (void)didTriggerTemplateChooseButtonTappedEvent {
+    
+    [self.router openChooseDirectoryOpenPanelWithCompletion:^(NSOpenPanel *panel,NSInteger result) {
+        
+        if (result == NSFileHandlingPanelOKButton) {
+            self.templatePathURL = panel.URLs[0];
+            NSLog(@"New template PathURL: %@", self.templatePathURL);
+            
+            NSString *pathString = [self.templatePathURL URLStringWithoutFilePrefix];
+            
+            [self.view updateViewWithNewTemplatePathString:pathString];
+        }
+        
+    }];
+    
+}
+
 - (void)didTriggerGenerateButtonTappedEventWithModuleSettings:(ModuleSettings *)settings {
 
-    NSString *pathString;
-
-    switch (settings.language) {
-        case LanguageObjectiveC:
-            pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
-            break;
-        case LanguageSwift:
-            pathString = [[NSBundle mainBundle] pathForResource:@"swift-template" ofType:@"json"];
-            break;
-    }
+    NSString *pathString = [self pathStringForTemplateWithModuleSettings:settings];
 
     NSError *generatorSetupError;
     [self.generator setupWithTemplatePath:[NSURL URLWithString:pathString] error:&generatorSetupError];
@@ -84,6 +95,35 @@
     
     return NSFullUserName();
     
+}
+
+- (NSString *)pathStringForTemplateWithModuleSettings:(ModuleSettings *)settings {
+    
+    if (self.templatePathURL) {
+        
+        NSString *path = [NSFileManager findJSONFileInDirecory:[self.templatePathURL URLStringWithoutFilePrefix] ];
+        return path;
+        
+    } else {
+        return [self pathStringForDefaultTemplateWithModuleSettings:settings];
+    }
+    
+}
+
+- (NSString *)pathStringForDefaultTemplateWithModuleSettings:(ModuleSettings *)settings {
+    
+    NSString *pathString;
+    
+    switch (settings.language) {
+        case LanguageObjectiveC:
+            pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
+            break;
+        case LanguageSwift:
+            pathString = [[NSBundle mainBundle] pathForResource:@"swift-template" ofType:@"json"];
+            break;
+    }
+    
+    return pathString;
 }
 
 @end
