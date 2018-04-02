@@ -8,28 +8,42 @@
 
 #import "NSFileManager+GenerFileManager.h"
 
+#import "ModuleSettings.h"
+
 @implementation NSFileManager (GenerFileManager)
 
-+ (NSString *)findJSONFileInDirecory:(NSString *)directoryPath {
+#pragma mark - Public
+
++ (NSString *)findJSONFileInDirecory:(NSString *)directoryPath forSelectedLanguage:(Language)language {
     
     NSArray* dirs = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:directoryPath error:nil];
     
-    __block NSString *result;
+    NSString *result;
     
-    [dirs enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        
-        NSString *filename = (NSString *)obj;
-        NSString *extension = [[filename pathExtension] lowercaseString];
-        
-        if ([extension isEqualToString:@"json"]) {
-            
-            result = [directoryPath stringByAppendingPathComponent:filename];
-            *stop = YES;
-        }
-    }];
+    NSString *fileName = [self templateJSONNameForLanguage:language];
+    
+    result = [directoryPath stringByAppendingPathComponent:fileName];
     
     return result;
 }
 
+#pragma mark - Private
+
++ (NSString *)templateJSONNameForLanguage:(Language)language {
+    
+    NSString *jsonName;
+    
+    switch (language) {
+        case LanguageObjectiveC:
+            jsonName = [NSString stringWithFormat:@"template.json"];
+            break;
+        case LanguageSwift:
+            jsonName = [NSString stringWithFormat:@"swift-template.json"];
+
+            break;
+    }
+    
+    return jsonName;
+}
 
 @end

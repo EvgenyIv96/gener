@@ -101,29 +101,13 @@
     
     if (self.templatePathURL) {
         
-        NSString *path = [NSFileManager findJSONFileInDirecory:[self.templatePathURL URLStringWithoutFilePrefix] ];
+        NSString *path = [NSFileManager findJSONFileInDirecory:[self.templatePathURL URLStringWithoutFilePrefix] forSelectedLanguage:settings.language];
         return path;
         
-    } else {
-        return [self pathStringForDefaultTemplateWithModuleSettings:settings];
     }
     
-}
-
-- (NSString *)pathStringForDefaultTemplateWithModuleSettings:(ModuleSettings *)settings {
+    return nil;
     
-    NSString *pathString;
-    
-    switch (settings.language) {
-        case LanguageObjectiveC:
-            pathString = [[NSBundle mainBundle] pathForResource:@"template" ofType:@"json"];
-            break;
-        case LanguageSwift:
-            pathString = [[NSBundle mainBundle] pathForResource:@"swift-template" ofType:@"json"];
-            break;
-    }
-    
-    return pathString;
 }
 
 @end

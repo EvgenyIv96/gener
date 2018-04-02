@@ -10,7 +10,8 @@
 
 @implementation TemplateFileMeta
 
-- (instancetype)initWithJSON:(NSDictionary *)json {
+- (instancetype)initWithJSON:(NSDictionary *)json basePathTemplatesFolder:(NSURL *)basePathTemplatesFolderURL {
+    
     self = [super init];
     
     if (self) {
@@ -21,10 +22,10 @@
         NSURL *destinationURL = [NSURL URLWithString:json[@"destination_path"]];
         
         NSString *templatePath = json[@"template_path"];
-        NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
-        NSString *fullPath = [bundlePath stringByAppendingPathComponent:templatePath];
+//        NSString *bundlePath = [[NSBundle mainBundle] resourcePath];
+//        NSString *fullPath = [bundlePath stringByAppendingPathComponent:templatePath];
         
-        NSURL *tempaltePathURL = [NSURL URLWithString:fullPath];
+        NSURL *tempaltePathURL = [basePathTemplatesFolderURL URLByAppendingPathComponent:templatePath];
         
         _destinationPath = destinationURL;
         _templatePath = tempaltePathURL;

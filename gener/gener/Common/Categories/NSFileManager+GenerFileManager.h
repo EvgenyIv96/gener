@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ModuleSettings.h"
+
 @interface NSFileManager (GenerFileManager)
 
-+ (NSString *)findJSONFileInDirecory:(NSString *)directoryPath;
++ (NSString *)findJSONFileInDirecory:(NSString *)directoryPath forSelectedLanguage:(Language)language;
 
 @end

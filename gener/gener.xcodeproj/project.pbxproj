@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		570A2F5C1F2E661900E2449D /* swift-template.json in Resources */ = {isa = PBXBuildFile; fileRef = 570A2F5B1F2E661900E2449D /* swift-template.json */; };
-		570A2F771F2E680E00E2449D /* Templates in Resources */ = {isa = PBXBuildFile; fileRef = 570A2F761F2E680E00E2449D /* Templates */; };
 		57FD619B1F268BBE00554FD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD619A1F268BBE00554FD5 /* AppDelegate.m */; };
 		57FD619E1F268BBE00554FD5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD619D1F268BBE00554FD5 /* main.m */; };
 		57FD61A31F268BBE00554FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FD61A21F268BBE00554FD5 /* Assets.xcassets */; };
@@ -21,9 +19,6 @@
 		57FD61D11F268F5100554FD5 /* GenerationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD61CF1F268F5100554FD5 /* GenerationPresenter.m */; };
 		C771A45D1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */; };
 		C771A45E1F275BC400DA90C7 /* NSURL+GenerURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */; };
-		C771A4741F27705B00DA90C7 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = C771A4731F27705B00DA90C7 /* template.json */; };
-		C771A47A1F27852700DA90C7 /* testTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = C771A4791F27852700DA90C7 /* testTemplate.txt */; };
-		C771A47B1F27852700DA90C7 /* testTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = C771A4791F27852700DA90C7 /* testTemplate.txt */; };
 		C787A68B1F2B6CC2008CEADB /* FileCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6801F2B6CC2008CEADB /* FileCreator.m */; };
 		C787A68C1F2B6CC2008CEADB /* TemplateFileMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6821F2B6CC2008CEADB /* TemplateFileMeta.m */; };
 		C787A68D1F2B6CC2008CEADB /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = C787A6841F2B6CC2008CEADB /* Generator.m */; };
@@ -45,8 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		570A2F5B1F2E661900E2449D /* swift-template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "swift-template.json"; sourceTree = "<group>"; };
-		570A2F761F2E680E00E2449D /* Templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Templates; sourceTree = "<group>"; };
 		57FD61961F268BBE00554FD5 /* gener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gener.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FD61991F268BBE00554FD5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57FD619A1F268BBE00554FD5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,8 +61,6 @@
 		5C1D885A1F27362600BDF84F /* GenerationModuleRouting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerationModuleRouting.h; sourceTree = "<group>"; };
 		C771A45B1F275BC400DA90C7 /* NSURL+GenerURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+GenerURL.h"; sourceTree = "<group>"; };
 		C771A45C1F275BC400DA90C7 /* NSURL+GenerURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GenerURL.m"; sourceTree = "<group>"; };
-		C771A4731F27705B00DA90C7 /* template.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
-		C771A4791F27852700DA90C7 /* testTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testTemplate.txt; sourceTree = "<group>"; };
 		C787A67F1F2B6CC2008CEADB /* FileCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCreator.h; sourceTree = "<group>"; };
 		C787A6801F2B6CC2008CEADB /* FileCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCreator.m; sourceTree = "<group>"; };
 		C787A6811F2B6CC2008CEADB /* TemplateFileMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateFileMeta.h; sourceTree = "<group>"; };
@@ -127,7 +118,6 @@
 		57FD61981F268BBE00554FD5 /* gener */ = {
 			isa = PBXGroup;
 			children = (
-				570A2F761F2E680E00E2449D /* Templates */,
 				C771A4551F275B6600DA90C7 /* Common */,
 				57FD61BB1F268DCB00554FD5 /* Modules */,
 				57FD61991F268BBE00554FD5 /* AppDelegate.h */,
@@ -135,9 +125,6 @@
 				57FD61A21F268BBE00554FD5 /* Assets.xcassets */,
 				57FD61A41F268BBE00554FD5 /* Main.storyboard */,
 				57FD61A71F268BBE00554FD5 /* Info.plist */,
-				C771A4731F27705B00DA90C7 /* template.json */,
-				570A2F5B1F2E661900E2449D /* swift-template.json */,
-				C771A4791F27852700DA90C7 /* testTemplate.txt */,
 				57FD619C1F268BBE00554FD5 /* Supporting Files */,
 			);
 			path = gener;
@@ -333,12 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				570A2F771F2E680E00E2449D /* Templates in Resources */,
 				57FD61A31F268BBE00554FD5 /* Assets.xcassets in Resources */,
-				570A2F5C1F2E661900E2449D /* swift-template.json in Resources */,
 				57FD61A61F268BBE00554FD5 /* Main.storyboard in Resources */,
-				C771A47A1F27852700DA90C7 /* testTemplate.txt in Resources */,
-				C771A4741F27705B00DA90C7 /* template.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +329,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C771A47B1F27852700DA90C7 /* testTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

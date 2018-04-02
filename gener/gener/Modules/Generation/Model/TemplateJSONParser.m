@@ -11,6 +11,8 @@
 
 @interface TemplateJSONParser ()
 
+@property (copy, nonatomic) NSURL *pathTemplateFolderURL;
+
 @property (copy, nonatomic) NSArray *jsonArray;
 
 @end
@@ -31,6 +33,9 @@
 
 - (void)setupWithPath:(NSURL *)path error:(NSError **)error {
     
+    NSURL *pathTemplateFolderURL = [path URLByDeletingLastPathComponent];
+    
+    self.pathTemplateFolderURL = pathTemplateFolderURL;
     self.jsonArray = [self JSONArrayFromFileAtPath:path.absoluteString];
     
 }
@@ -40,7 +45,7 @@
     NSMutableArray *parsed = [[NSMutableArray alloc] init];
     
     for (NSDictionary *json in self.jsonArray) {
-        TemplateFileMeta *template = [[TemplateFileMeta alloc] initWithJSON:json];
+        TemplateFileMeta *template = [[TemplateFileMeta alloc] initWithJSON:json basePathTemplatesFolder:self.pathTemplateFolderURL];
         [parsed addObject:template];
     }
     

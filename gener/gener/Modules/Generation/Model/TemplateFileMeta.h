@@ -30,8 +30,9 @@
  Initializes object with JSON dictionary of specified format
 
  @param json dictionary with specified format
+ @param basePathTemplatesFolderURL NSURL Path to main templates directory.
  @return instance of FIleTemplate
  */
-- (instancetype)initWithJSON:(NSDictionary *)json;
+- (instancetype)initWithJSON:(NSDictionary *)json basePathTemplatesFolder:(NSURL *)basePathTemplatesFolderURL;
 
 @end
