@@ -13,6 +13,7 @@
 
 @interface GenerationViewController ()
 
+@property (weak) IBOutlet NSTextField *templatePathTextField;
 @property (weak) IBOutlet NSTextField *pathTextField;
 @property (weak) IBOutlet NSButton *choosePathButton;
 
@@ -42,6 +43,10 @@
     [self.output didTriggerChooseButtonTappedEvent];
 }
 
+- (IBAction)temlateChooseButtonTapped:(NSButton *)sender {
+    [self.output didTriggerTemplateChooseButtonTappedEvent];
+}
+
 - (IBAction)generateButtonTapped:(NSButton *)sender {
 
     Language language = (Language)self.languageSegmentedControl.selectedSegment;
@@ -65,6 +70,10 @@
 
 - (void)updateViewWithNewModulePathString:(NSString *)modulePathString {
     [self.pathTextField setStringValue:modulePathString];
+}
+
+- (void)updateViewWithNewTemplatePathString:(NSString *)templatePathString {
+    [self.templatePathTextField setStringValue:templatePathString];
 }
 
 - (void)updateViewWithAuthorNameString:(NSString *)authorNameString {
