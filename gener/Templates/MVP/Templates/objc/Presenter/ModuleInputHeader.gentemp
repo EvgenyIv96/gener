@@ -1,0 +1,20 @@
+//
+//  $prefix$$moduleName$ModuleInput.h
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@protocol $prefix$$moduleName$ModuleInput <NSObject>
+
+/**
+
+ Method is used to configure module;
+
+ */
+- (void)configureModule;
+
+@end

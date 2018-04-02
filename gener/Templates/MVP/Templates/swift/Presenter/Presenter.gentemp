@@ -1,0 +1,37 @@
+//
+//  $moduleName$Presenter.swift
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+import Foundation
+
+class $moduleName$Presenter {
+    
+    var view: $moduleName$ViewInput!
+    
+    var router: $moduleName$ModuleRouting!
+
+}
+
+// MARK: - $moduleName$ViewOutput
+extension $moduleName$Presenter: $moduleName$ViewOutput {
+    
+    func didTriggerViewReadyEvent() {
+        
+        view.setupInitialState()
+
+    }
+    
+}
+
+// MARK: - $moduleName$ModuleInput
+extension $moduleName$Presenter: $moduleName$ModuleInput {
+
+    func configureModule() {
+
+    }
+
+}

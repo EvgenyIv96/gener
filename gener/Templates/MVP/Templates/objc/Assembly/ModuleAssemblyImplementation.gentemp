@@ -1,0 +1,34 @@
+//
+//  $prefix$$moduleName$ModuleAssembly.m
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+#import "$prefix$$moduleName$ModuleAssembly.h"
+
+#import "$prefix$$moduleName$ViewController.h"
+#import "$prefix$$moduleName$Presenter.h"
+
+@implementation $prefix$$moduleName$ModuleAssembly
+
+- (void)build$moduleName$ModuleWithCompletion:(void(^)(id<$prefix$$moduleName$ModuleInput> moduleInput, UIViewController *viewController))completion {
+
+    //Creating module components
+    $prefix$$moduleName$ViewController *viewController = [[UIStoryboard storyboardWithName:@"<#$moduleName$ storyboard name#>" bundle:nil] instantiateViewControllerWithIdentifier:@"<#$moduleName$ view controller identifier #>"];
+
+    $prefix$$moduleName$Presenter *presenter = [[$prefix$$moduleName$Presenter alloc] init];
+
+    //Injecting properties
+    viewController.output = presenter;
+    presenter.view = viewController;
+    presenter.router = viewController;
+
+    if (completion) {
+        completion(presenter ,viewController);
+    }
+
+}
+
+@end

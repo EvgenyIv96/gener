@@ -1,0 +1,20 @@
+//
+//  $prefix$$moduleName$ViewController.h
+//  $projectName$
+//
+//  Created by $author$ on $date$.
+//  Copyright © $year$ $company$. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#import "$prefix$$moduleName$ViewInput.h"
+#import "$prefix$$moduleName$ModuleRouting.h"
+
+@protocol $prefix$$moduleName$ViewOutput;
+
+@interface $prefix$$moduleName$ViewController : UIViewController <$prefix$$moduleName$ViewInput, $prefix$$moduleName$ModuleRouting>
+
+@property (strong, nonatomic) id<$prefix$$moduleName$ViewOutput> output;
+
+@end
